@@ -8,10 +8,17 @@
     <title><%= make_title %></title>
 
     <%= stylesheet_link_tag 'bootstrap' %>
+    <%= stylesheet_link_tag 'application' %>
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+
+      <footer class="footer">
+        <small class="copyright">&copy; notozeki 2015</small>
+      </footer>
+    </div>
 
     <%= javascript_include_tag 'bootstrap' %>
   </body>
