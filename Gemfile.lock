@@ -99,6 +99,9 @@ GEM
     padrino-support (0.12.3)
       activesupport (>= 3.1)
     rack (1.5.2)
+    rack-google-analytics (1.2.0)
+      actionpack
+      activesupport
     rack-test (0.6.2)
       rack (>= 1.0)
     railties (4.1.6)
@@ -141,5 +144,6 @@ DEPENDENCIES
   jquery-rails (~> 3.1.2)
   middleman (~> 3.3.6)
   middleman-autoprefixer (~> 2.1.2)
+  rack-google-analytics
   tzinfo-data
   wdm (~> 0.1.0)

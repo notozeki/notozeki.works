@@ -12,3 +12,5 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw]
 gem 'bootstrap-sass', '~> 3.2.0', require: false
 gem 'jquery-rails', '~> 3.1.2', require: false
 gem 'middleman-autoprefixer', '~> 2.1.2'
+
+gem 'rack-google-analytics'
