@@ -21,3 +21,12 @@
         }
     }
 }
+
+.circle-cut-thumbnail {
+    text-align: center;
+    width: 150px;
+    & > img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
