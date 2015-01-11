@@ -1,0 +1,32 @@
+---
+layout: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title><%= make_title %></title>
+
+  <!-- https://developers.google.com/analytics/devguides/collection/analyticsjs/advanced?hl=ja -->
+  <script>
+    // Set to the same value as the web property used on the site
+    var gaProperty = 'UA-58422142-1';
+
+    // Disable tracking if the opt-out cookie exists.
+    var disableStr = 'ga-disable-' + gaProperty;
+    if (document.cookie.indexOf(disableStr + '=true') > -1) {
+      window[disableStr] = true;
+    }
+
+    // Opt-out function
+    function gaOptout() {
+      document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+      window[disableStr] = true;
+    }
+  </script>
+</head>
+
+<body onload="gaOptout();">
+  <p>We do not track you on Google Analytics ;)</p>
+</body>
+</html>
