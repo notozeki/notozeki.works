@@ -14,6 +14,7 @@ end
 
 # Extensions
 activate :autoprefixer
+activate :directory_indexes
 
 # Rack middleware
 use Rack::GoogleAnalytics, tracker: 'UA-58422142-1'
