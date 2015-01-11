@@ -13,6 +13,16 @@
 
   <body class="<%= page_classes %>">
     <div class="container">
+      <header class="page-header">
+        <nav class="main-menu">
+          <ul class="nav nav-pills pull-right">
+            <%= nav_link 'Home', '/' %>
+            <%= nav_link '同人活動', '/doujin/' %>
+          </ul>
+        </nav>
+        <h1 class="logo"><a href="/">notozeki works <small>(仮)</small></a></h1>
+      </header>
+
       <%= yield %>
 
       <footer class="footer">

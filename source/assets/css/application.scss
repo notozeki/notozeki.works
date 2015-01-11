@@ -1,3 +1,35 @@
+@media (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+}
+
+.main-menu {
+    li > a {
+        font-weight: bold;
+        color: #aaa;
+        &:hover {
+            color: #333;
+            background: none;
+        }
+    }
+    li.active > a {
+        background: none;
+        color: #333;
+        text-decoration: underline;
+        &:hover {
+            color: inherit;
+            background: none;
+        }
+    }
+}
+
+.logo {
+    a {
+        color: #222;
+    }
+}
+
 .footer {
     margin: 20px 0 25px 0;
     padding-top: 20px;

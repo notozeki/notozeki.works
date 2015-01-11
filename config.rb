@@ -10,6 +10,20 @@ helpers do
   def make_title
     [current_page.data.title, config[:site_name]].compact.join(' | ')
   end
+
+  def nav_link(text, path)
+    here = normalize_path(current_path)
+    content_tag :li, class: (here == path ? 'active' : '') do
+      link_to text, path
+    end
+  end
+
+  def normalize_path(path)
+    unless path.start_with? '/'
+      path = '/' + path
+    end
+    path.sub!(/index.html$/, '')
+  end
 end
 
 # Extensions
