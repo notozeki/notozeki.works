@@ -62,3 +62,15 @@
         max-height: 150px;
     }
 }
+
+.updates {
+    list-style-type: none;
+
+    dt {
+        float: left;
+        clear: left;
+        &:after {
+            content: '\00a0';
+        }
+    }
+}
