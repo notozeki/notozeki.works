@@ -13,4 +13,9 @@ gem 'bootstrap-sass', '~> 3.3.0', require: false
 gem 'jquery-rails', '~> 3.1.2', require: false
 gem 'middleman-autoprefixer', '~> 2.1.2'
 
+# Analytics
 gem 'rack-google-analytics'
+
+# Blog
+gem 'middleman-blog'
+gem 'redcarpet' # Markdown engine

@@ -4,6 +4,8 @@ set :css_dir, 'assets/css'
 set :js_dir, 'assets/js'
 set :images_dir, 'assets/img'
 set :fonts_dir, 'assets/font'
+set :markdown_engine, :redcarpet
+set :markdown, tables: true, autolink: true, fenced_code_blocks: true
 
 # Helpers
 helpers do
@@ -27,6 +29,11 @@ helpers do
 end
 
 # Extensions
+activate :blog do |blog|
+  blog.prefix = 'blog'
+  blog.permalink = '{title}.html'
+  blog.layout = 'blog'
+end
 activate :autoprefixer
 activate :directory_indexes
 

@@ -1,0 +1,22 @@
+<% wrap_layout :layout do %>
+  <article>
+    <header class="blog-header">
+      <div class="row">
+        <div class="col-md-2">
+          <time class="blog-pubdate" pubdate datetime="<%= current_article.date.strftime('%F') %>">
+            <%= current_article.date.strftime('%F %a') %>
+          </time>
+        </div>
+        <div class="col-md-10">
+          <h2 class="blog-title"><%= current_article.title %></h2>
+        </div>
+      </div>
+    </header>
+
+    <div class="row">
+      <div class="col-md-offset-2 col-md-10">
+        <%= yield %>
+      </div>
+    </div>
+  </article>
+<% end %>
