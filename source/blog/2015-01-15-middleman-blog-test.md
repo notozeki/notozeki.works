@@ -1,5 +1,6 @@
 ---
 title: Blog機能のテスト
+published: false
 ---
 
 これはMiddlemanのBlog機能のテストです。

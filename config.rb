@@ -1,9 +1,13 @@
 # Config
 set :site_name, 'notozeki works (仮)'
+
 set :css_dir, 'assets/css'
 set :js_dir, 'assets/js'
 set :images_dir, 'assets/img'
 set :fonts_dir, 'assets/font'
+
+set :trailing_slash, false
+
 set :markdown_engine, :redcarpet
 set :markdown, tables: true, autolink: true, fenced_code_blocks: true
 
@@ -15,7 +19,8 @@ helpers do
 
   def nav_link(text, path)
     here = normalize_path(current_path)
-    content_tag :li, class: (here == path ? 'active' : '') do
+    active = path == '/' ? (here == '/') : here.start_with?(path)
+    content_tag :li, class: (active ? 'active' : '') do
       link_to text, path
     end
   end

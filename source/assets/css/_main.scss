@@ -78,6 +78,7 @@ body.blog {
 }
 
 .blog-header {
+    margin-bottom: 15px;
     .blog-pubdate {
         font-size: 87%;
         font-weight: bold;
@@ -85,5 +86,17 @@ body.blog {
     }
     .blog-title {
         margin-top: 0;
+    }
+}
+
+.blog-articles {
+    list-style-type: none;
+
+    dt {
+        float: left;
+        clear: left;
+        &:after {
+            content: '\00a0';
+        }
     }
 }
