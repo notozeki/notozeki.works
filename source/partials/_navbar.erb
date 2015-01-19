@@ -1,0 +1,21 @@
+<nav class="navbar navbar-custom">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+      <span class="sr-only">メニューを表示</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/"><%= config[:site_name] %></a>
+  </div>
+
+  <div id="main-menu" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <%= nav_link 'Home', '/' %>
+      <%= nav_link '同人活動', '/doujin/' %>
+      <%= nav_link 'ブログ', '/blog/' %>
+      <%= nav_link 'Twitter', 'https://twitter.com/notozeki' %>
+      <%= nav_link 'pixiv', 'http://pixiv.me/notozeki' %>
+    </ul>
+  </div>
+</nav>

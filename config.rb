@@ -1,10 +1,11 @@
 # Config
-set :site_name, 'notozeki works (仮)'
+set :site_name, 'notozeki works'
 
 set :css_dir, 'assets/css'
 set :js_dir, 'assets/js'
 set :images_dir, 'assets/img'
 set :fonts_dir, 'assets/font'
+set :partials_dir, 'partials'
 
 set :trailing_slash, false
 
@@ -21,7 +22,11 @@ helpers do
     here = normalize_path(current_path)
     active = path == '/' ? (here == '/') : here.start_with?(path)
     content_tag :li, class: (active ? 'active' : '') do
-      link_to text, path
+      if active
+        link_to "#{text} <span class=\"sr-only\">(今見ているページ)</span>", path
+      else
+        link_to text, path
+      end
     end
   end
 

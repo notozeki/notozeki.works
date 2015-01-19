@@ -12,18 +12,7 @@
 
   <body class="<%= page_classes %>">
     <div class="container">
-      <header class="page-header">
-        <nav class="main-menu">
-          <ul class="nav nav-pills pull-right">
-            <%= nav_link 'Home', '/' %>
-            <%= nav_link '同人活動', '/doujin/' %>
-            <%= nav_link 'ブログ', '/blog/' %>
-            <%= nav_link 'Twitter', 'https://twitter.com/notozeki' %>
-            <%= nav_link 'pixiv', 'http://pixiv.me/notozeki' %>
-          </ul>
-        </nav>
-        <h1 class="logo"><a href="/">notozeki works <small>(仮)</small></a></h1>
-      </header>
+      <%= partial 'navbar' %>
 
       <%= yield %>
 
