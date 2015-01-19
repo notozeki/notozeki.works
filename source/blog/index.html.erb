@@ -1,0 +1,10 @@
+---
+title: ブログ
+---
+<h2>ブログ記事一覧</h2>
+<dl class="blog-articles">
+  <% blog.articles.each do |article| %>
+    <dt><time><%= article.date.strftime('%F') %></time></dt>
+    <dd><a href="<%= article.url %>"><%= article.title %></a></dd>
+  <% end %>
+</dl>
