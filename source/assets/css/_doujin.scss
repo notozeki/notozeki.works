@@ -1,0 +1,21 @@
+.event-description {
+    list-style-type: none;
+
+    dt {
+        float: left;
+        clear: left;
+        font-weight: normal;
+        &:after {
+            content: ':\00a0';
+        }
+    }
+}
+
+.circle-cut-thumbnail {
+    text-align: center;
+    width: 150px;
+    & > img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+}

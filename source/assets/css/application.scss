@@ -1,3 +1,8 @@
-@import "_bootstrap-custom";
-@import "_bootstrap";
-@import "_main";
+@import "bootstrap-custom";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import "layout";
+@import "home";
+@import "doujin";
+@import "blog";
