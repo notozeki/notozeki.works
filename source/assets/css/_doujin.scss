@@ -12,10 +12,26 @@
 }
 
 .circle-cut-thumbnail {
-    text-align: center;
-    width: 150px;
-    & > img {
-        max-width: 150px;
-        max-height: 150px;
+    > a {
+        display: block;
+        text-align: center;
+        width: 150px;
+        > img {
+            max-width: 150px;
+            max-height: 150px;
+        }
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .media {
+        @include make-row;
+    }
+    .media-left {
+        @include make-xs-column(12);
+    }
+    .media-body {
+        @include make-xs-column(12);
+        margin-top: 10px;
     }
 }
