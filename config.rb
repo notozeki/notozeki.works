@@ -36,6 +36,12 @@ helpers do
     end
     path.sub!(/index.html$/, '')
   end
+
+  def time_tag_ja(date)
+    content_tag :time, datetime: date.strftime('%F') do
+      date.strftime('%Y年%-m月%-d日')
+    end
+  end
 end
 
 # Extensions

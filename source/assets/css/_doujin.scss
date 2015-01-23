@@ -1,24 +1,21 @@
-.event-description {
-    list-style-type: none;
+@mixin thumbnail {
+    display: block;
+    text-align: center;
+    width: 150px;
+    > img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
 
+@mixin description-list {
+    list-style-type: none;
     dt {
         float: left;
         clear: left;
         font-weight: normal;
         &:after {
             content: ':\00a0';
-        }
-    }
-}
-
-.circle-cut-thumbnail {
-    > a {
-        display: block;
-        text-align: center;
-        width: 150px;
-        > img {
-            max-width: 150px;
-            max-height: 150px;
         }
     }
 }
@@ -34,4 +31,25 @@
         @include make-xs-column(12);
         margin-top: 10px;
     }
+}
+
+.media-body {
+    width: 100%;
+}
+
+.circle-cut-thumbnail {
+    @include thumbnail;
+}
+
+.book-cover-thumbnail {
+    @include thumbnail;
+    background-color: #eee;
+}
+
+.event-description {
+    @include description-list;
+}
+
+.book-description {
+    @include description-list;
 }

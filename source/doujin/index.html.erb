@@ -3,8 +3,8 @@ title: 同人活動
 ---
 <h2>参加予定のイベント</h2>
 <div class="media">
-  <div class="media-left circle-cut-thumbnail">
-    <a href="/assets/img/comitia111cc.png">
+  <div class="media-left">
+    <a href="/assets/img/comitia111cc.png" class="circle-cut-thumbnail">
       <img src="/assets/img/comitia111cc.png" alt="COMITIA111サークルカット">
     </a>
   </div>
@@ -22,3 +22,37 @@ title: 同人活動
     </dl>
   </div>
 </div>
+
+<h2>同人誌</h2>
+<% data.books.each do |book| %>
+<div class="media">
+  <div class="media-left">
+    <% if book.cover %>
+    <a href="<%= book.cover %>" class="book-cover-thumbnail">
+      <img src="<%= book.cover %>" alt="『<%= strip_tags book.title %>』表紙">
+    </a>
+    <% else %>
+    <img src="<%= lorem.image('150x150', text: 'no image', background_color: 'eee') %>" alt="表紙画像はありません">
+    <% end %>
+  </div>
+
+  <div class="media-body">
+    <h3 class="media-heading"><%= book.title %></h3>
+    <p><%= book.desc %></p>
+    <dl class="book-description">
+      <dt>発行日</dt>
+      <dd>
+        <%= time_tag_ja book.publish.date %>
+        <% if book.publish.event %>
+        (<%= book.publish.event %>)
+        <% end %>
+      </dd>
+      <dt>在庫</dt>
+      <dd><%= book.stock %></dd>
+    </dl>
+    <% if book.comment %>
+    <p><%= book.comment %></p>
+    <% end %>
+  </div>
+</div>
+<% end %>
