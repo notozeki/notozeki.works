@@ -23,7 +23,7 @@ title: 同人活動
   </div>
 </div>
 
-<h2>同人誌</h2>
+<h2>個人誌</h2>
 <% data.books.each do |book| %>
 <div class="media">
   <div class="media-left">
@@ -32,7 +32,7 @@ title: 同人活動
       <img src="<%= book.cover %>" alt="『<%= strip_tags book.title %>』表紙">
     </a>
     <% else %>
-    <img src="<%= lorem.image('150x150', text: 'no image', background_color: 'eee') %>" alt="表紙画像はありません">
+    <img src="<%= lorem.image('200x200', text: 'no image', background_color: 'eee') %>" alt="表紙画像はありません">
     <% end %>
   </div>
 
@@ -56,3 +56,28 @@ title: 同人活動
   </div>
 </div>
 <% end %>
+
+<h2>その他 <small>合同誌・寄稿など</small></h2>
+<dl class="contributions">
+  <dt>2014年</dt>
+  <dd>
+    <span class="label label-illust">イラスト</span>
+    <a href="https://twitter.com/nyogetsu">カガミツキ</a>さんの個人誌総集編『<a href="http://mmoon.soragoto.net/achade/mm1/">ミラームーンズ 1stMIX</a>』の別冊トリビュート本にゲスト参加
+  </dd>
+  <dd>
+    <span class="label label-illust">イラスト</span>
+    <a href="https://twitter.com/oke_rabbit">おけらびあすら</a>さんのポストカード集『<a href="http://pixiv.net/i/47189065">冬のインクがなくなる前に</a>』にゲスト参加
+  </dd>
+
+  <dt>2012年</dt>
+  <dd>
+    <span class="label label-illust">イラスト</span>
+    サークル<a href="http://memorial.gymb.jp/">(旧)彳</a>の合同誌『<a href="http://memorial.gymb.jp/comic/hotate">ほたて缶</a>』にゲスト参加
+  </dd>
+
+  <dt>2011年</dt>
+  <dd>
+    <span class="label label-comic">漫画</span>
+    サークル<a href="http://memorial.gymb.jp/">(旧)彳</a>の合同誌『<a href="http://memorial.gymb.jp/comic/yaneame">屋根から降る雨</a>』に参加
+  </dd>
+</dl>

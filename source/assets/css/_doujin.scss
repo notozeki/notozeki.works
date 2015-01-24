@@ -1,10 +1,10 @@
-@mixin thumbnail {
+@mixin thumbnail($size) {
     display: block;
     text-align: center;
-    width: 150px;
+    width: $size;
     > img {
-        max-width: 150px;
-        max-height: 150px;
+        max-width: $size;
+        max-height: $size;
     }
 }
 
@@ -37,12 +37,26 @@
     width: 100%;
 }
 
+.label { // customize Bootstrap's .label
+    padding: .2em .6em;
+    font-weight: normal;
+    border-radius: 0;
+}
+
+.label-illust {
+    background-color: #75ace3;
+}
+
+.label-comic {
+    background-color: #a0be79;
+}
+
 .circle-cut-thumbnail {
-    @include thumbnail;
+    @include thumbnail(150px);
 }
 
 .book-cover-thumbnail {
-    @include thumbnail;
+    @include thumbnail(200px);
     background-color: #eee;
 }
 
@@ -52,4 +66,16 @@
 
 .book-description {
     @include description-list;
+}
+
+.contributions {
+    dt {
+        margin-top: 10px;
+    }
+    dt:first-child {
+        margin-top: 0;
+    }
+    dd {
+        margin-bottom: 4px;
+    }
 }

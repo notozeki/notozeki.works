@@ -5,16 +5,13 @@
     date: 2014-11-23
     event: COMITIA110
   stock: なし
-  #comment: お兄ちゃんにヤキモチを焼く妹の話です。こんな妹をください。
 
 - title: またね。<small>プレビュー版</small>
-  # cover: 
   desc: オリジナル / 漫画 / A5コピー本
   publish:
     date: 2014-08-31
     event: COMITIA109
   stock: なし
-  #comment: この本を出した日がちょうど夏休み最後の日ということで、
 
 - title: おさげの眼鏡っ娘が「進捗」って言うだけ
   cover: /assets/img/osagemeganeko-says-shinchoku.png
@@ -34,7 +31,7 @@
 
 - title: お<ruby>月<rp>(</rp><rt>つき</rt><rp>)</rp></ruby>あいを前提にケッコンして下さい
   cover: /assets/img/marry-me-on-the-moon.png
-  desc: オリジナル / 漫画 / A5オンデ本
+  desc: オリジナル / 漫画 / A5オンデマンド本
   publish:
     date: 2012-09-02
     event: COMITIA101
