@@ -1,3 +1,9 @@
+a.external:after {
+    @extend .glyphicon;
+    content: "\e164"; // .glyphicon-new-window
+    font-size: small;
+}
+
 .footer {
     margin: 20px 0 25px 0;
     padding-top: 20px;
