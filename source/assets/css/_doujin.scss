@@ -1,10 +1,10 @@
-@mixin thumbnail($size) {
+@mixin thumbnail($width, $height) {
     display: block;
     text-align: center;
-    width: $size;
+    width: $width;
     > img {
-        max-width: $size;
-        max-height: $size;
+        max-width: $width;
+        max-height: $height;
     }
 }
 
@@ -33,6 +33,10 @@
     }
 }
 
+.media {
+    margin-bottom: 15px;
+}
+
 .media-body {
     width: 100%;
 }
@@ -52,12 +56,14 @@
 }
 
 .circle-cut-thumbnail {
-    @include thumbnail(150px);
+    @include thumbnail(150px, 150px);
 }
 
 .book-cover-thumbnail {
-    @include thumbnail(200px);
-    background-color: #eee;
+    @include thumbnail(150px, 200px);
+    > img {
+        border: 1px solid #eee;
+    }
 }
 
 .event-description {
