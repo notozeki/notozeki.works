@@ -55,6 +55,10 @@
     background-color: #a0be79;
 }
 
+.row.books > :last-child > .media {
+    margin-bottom: 0;
+}
+
 .circle-cut-thumbnail {
     @include thumbnail(150px, 150px);
 }
