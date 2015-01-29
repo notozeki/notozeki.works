@@ -1,16 +1,19 @@
+$headings: h1, h2, h3, ".h1", ".h2", ".h3";
+
+@each $h in $headings {
+    #{$h}:not(:first-child) {
+        margin-top: floor($line-height-computed * 1.4);
+    }
+}
+
 .content {
-    > h1, > .h1,
-    > h2, > .h2,
-    > h3, > .h3 {
-        &:before {
+    @each $h in $headings {
+        > #{$h}:before {
             @extend .glyphicon;
             content: "\e080"; // .glyphicon-chevron-right
-            font-size: small;
+            font-size: $font-size-small;
             margin-right: .5em;
             vertical-align: .25em;
-        }
-        &:not(:first-child) {
-            margin-top: floor($line-height-computed * 1.2);
         }
     }
 }
@@ -18,7 +21,9 @@
 a.external:after {
     @extend .glyphicon;
     content: "\e164"; // .glyphicon-new-window
-    font-size: small;
+    margin-right: .2em;
+    font-size: x-small;
+    color: #ccc;
 }
 
 .footer {

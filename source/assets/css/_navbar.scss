@@ -6,12 +6,12 @@
 
     .navbar-brand {
         padding-left: 0;
-        font-size: $font-size-h1;
-        font-weight: 500;
+        font-size: floor(($font-size-base * 2));
+        font-weight: bold;
         color: #222;
         &:hover,
         &:focus {
-            color: $link-color;
+            color: $link-hover-color;
         }
     }
 

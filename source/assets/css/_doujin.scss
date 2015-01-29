@@ -10,6 +10,7 @@
 
 @mixin description-list {
     list-style-type: none;
+    margin-bottom: ($line-height-computed / 2); // equal to margin of <p>
     dt {
         float: left;
         clear: left;
@@ -33,10 +34,6 @@
     }
 }
 
-.media {
-    margin-bottom: 15px;
-}
-
 .media-body {
     width: 100%;
 }
@@ -55,8 +52,12 @@
     background-color: #a0be79;
 }
 
-.row.books > :last-child > .media {
-    margin-bottom: 0;
+.books-grid > :not(:last-child) .media {
+    margin-bottom: 15px;
+}
+
+.media-list + h2 {
+    margin-top: floor($line-height-computed * 2);
 }
 
 .circle-cut-thumbnail {

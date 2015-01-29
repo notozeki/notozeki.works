@@ -6,64 +6,68 @@ title: 同人活動
 </p>
 
 <h2 id="upnext">参加予定のイベント</h2>
-<div class="media">
-  <div class="media-left">
-    <a href="/assets/img/comitia111cc.png" class="circle-cut-thumbnail">
-      <img src="/assets/img/comitia111cc.png" alt="COMITIA111サークルカット">
-    </a>
-  </div>
+<ul class="media-list">
+  <li class="media">
+    <div class="media-left">
+      <a href="/assets/img/comitia111cc.png" class="circle-cut-thumbnail">
+        <img src="/assets/img/comitia111cc.png" alt="COMITIA111サークルカット">
+      </a>
+    </div>
 
-  <div class="media-body">
-    <h3 class="media-heading">
-      COMITIA111 <small><a href="http://www.comitia.co.jp" class="external">公式サイト</a></small>
-    </h3>
-    <p><time datetime="2015-02-01">2015年2月1日(日)</time> 東京ビッグサイト東5・6ホール</p>
-    <dl class="event-description">
-      <dt>スペース</dt>
-      <dd><strong>J18b</strong> ロヒス屋</dd>
-      <dt>頒布物</dt>
-      <dd>漫画短篇集を予定。詳細は追って告知します。</dd>
-    </dl>
-  </div>
-</div>
+    <div class="media-body">
+      <h3 class="media-heading">
+        COMITIA111 <small><a href="http://www.comitia.co.jp" class="external">公式サイト</a></small>
+      </h3>
+      <p><time datetime="2015-02-01">2015年2月1日(日)</time> 東京ビッグサイト東5・6ホール</p>
+      <dl class="event-description">
+        <dt>スペース</dt>
+        <dd><strong>J18b</strong> ロヒス屋</dd>
+        <dt>頒布物</dt>
+        <dd>漫画短篇集を予定。詳細は追って告知します。</dd>
+      </dl>
+    </div>
+  </li>
+</ul>
 
 <h2>個人誌</h2>
-<div class="row books">
-  <% data.books.each do |book| %>
-  <div class="col-lg-6">
-    <div class="media">
-      <div class="media-left">
-        <% if book.cover %>
-        <a href="<%= book.cover %>" class="book-cover-thumbnail">
-          <img src="<%= book.cover %>" alt="『<%= strip_tags book.title %>』表紙">
-        </a>
-        <% else %>
-        <img src="<%= lorem.image('150x200', text: 'no image', background_color: 'eee') %>" alt="表紙画像はありません">
-        <% end %>
-      </div>
+<ul class="media-list">
+  <div class="row books-grid">
+    <% data.books.each do |book| %>
+    <div class="col-lg-6">
+      <li class="media">
+        <div class="media-left">
+          <% if book.cover %>
+          <a href="<%= book.cover %>" class="book-cover-thumbnail">
+            <img src="<%= book.cover %>" alt="『<%= strip_tags book.title %>』表紙">
+          </a>
+          <% else %>
+          <img src="<%= lorem.image('150x200', text: 'no image', background_color: 'eee') %>" alt="表紙画像はありません">
+          <% end %>
+        </div>
 
-      <div class="media-body">
-        <h3 class="media-heading"><%= book.title %></h3>
-        <p><%= book.desc %></p>
-        <dl class="book-description">
-          <dt>発行日</dt>
-          <dd>
-            <%= time_tag_ja book.publish.date %>
-            <% if book.publish.event %>
-            (<%= book.publish.event %>)
-            <% end %>
-          </dd>
-          <dt>在庫</dt>
-          <dd><%= book.stock %></dd>
-        </dl>
-        <% if book.comment %>
-        <p><%= book.comment %></p>
-        <% end %>
-      </div>
-    </div>
-  </div>
+        <div class="media-body">
+          <h3 class="media-heading"><%= book.title %></h3>
+          <p><%= book.desc %></p>
+          <dl class="book-description">
+            <dt>発行日</dt>
+            <dd>
+              <%= time_tag_ja book.publish.date %>
+              <% if book.publish.event %>
+              (<%= book.publish.event %>)
+              <% end %>
+            </dd>
+            <dt>在庫</dt>
+            <dd><%= book.stock %></dd>
+          </dl>
+          <% if book.comment %>
+          <p><%= book.comment %></p>
+          <% end %>
+        </div>
+      </li>
+    </div><!-- .col-lg-6 -->
   <% end %>
-</div>
+  </div><!-- .row -->
+</ul>
 
 <h2>その他 <small>合同誌・寄稿など</small></h2>
 <dl class="contributions">
