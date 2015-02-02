@@ -16,6 +16,12 @@ $headings: h1, h2, h3, ".h1", ".h2", ".h3";
             vertical-align: .25em;
         }
     }
+
+    &:after { // clearfix
+        content: "";
+        display: block;
+        clear: both;
+    }
 }
 
 a.external:after {

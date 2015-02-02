@@ -9,3 +9,53 @@
         }
     }
 }
+
+.profile-heading {
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.icon {
+    float: right;
+    padding-left: 20px;
+    > img {
+        width: 200px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        float: none;
+        padding-left: 0;
+        margin-top: ($line-height-computed * 2);
+        text-align: center;
+    }
+}
+
+.social-links {
+    padding: 0;
+    font-size: floor($font-size-base * 1.1);
+    li {
+        display: inline;
+    }
+}
+
+.label-twitter {
+    background-color: #55acee;
+    &:hover {
+        background-color: darken(#55acee, 15%);
+    }
+}
+
+.label-pixiv {
+    background-color: #0096db;
+    &:hover {
+        background-color: darken(#0096db, 15%);
+    }
+}
+
+.label-github {
+    background-color: #333;
+    &:hover {
+        background-color: darken(#333, 15%);
+    }
+}
