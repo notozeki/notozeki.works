@@ -1,6 +1,10 @@
 - title: 一頁漫画まとめ
   cover: /assets/img/1page.png
-  desc: オリジナル / 漫画 / A5コピー本
+  labels:
+    - name: 漫画
+      class: label-comic
+    - name: A5コピー本
+      class: label-format
   publish:
     date: 2015-02-01
     event: COMITIA111
@@ -8,14 +12,22 @@
 
 - title: 長男はじめ 長女にのめ
   cover: /assets/img/hajime-ninome.png
-  desc: オリジナル / 漫画 / B5コピー本
+  labels:
+    - name: 漫画
+      class: label-comic
+    - name: B5コピー本
+      class: label-format
   publish:
     date: 2014-11-23
     event: COMITIA110
   stock: なし
 
 - title: またね。<small>プレビュー版</small>
-  desc: オリジナル / 漫画 / A5コピー本
+  labels:
+    - name: 漫画
+      class: label-comic
+    - name: A5コピー本
+      class: label-format
   publish:
     date: 2014-08-31
     event: COMITIA109
@@ -23,7 +35,11 @@
 
 - title: おさげの眼鏡っ娘が「進捗」って言うだけ
   cover: /assets/img/osagemeganeko-says-shinchoku.png
-  desc: オリジナル / らくがき集 / A5コピー本
+  labels:
+    - name: らくがき集
+      class: label-other
+    - name: A5コピー本
+      class: label-format
   publish:
     date: 2014-05-05
     event: COMITIA108
@@ -31,7 +47,11 @@
 
 - title: <ruby>菱型<rp>(</rp><rt>りょうけい</rt><rp>)</rp></ruby>六十面体のつくりかた
   cover: /assets/img/how-to-make-rhombic-hexecontahedron.png
-  desc: オリジナル / 折り紙解説 / A5コピー本
+  labels:
+    - name: 折り紙解説
+      class: label-other
+    - name: A5コピー本
+      class: label-format
   publish:
     date: 2013-08-18
     event: COMITIA105
@@ -39,7 +59,11 @@
 
 - title: お<ruby>月<rp>(</rp><rt>つき</rt><rp>)</rp></ruby>あいを前提にケッコンして下さい
   cover: /assets/img/marry-me-on-the-moon.png
-  desc: オリジナル / 漫画 / A5オンデマンド本
+  labels:
+    - name: 漫画
+      class: label-comic
+    - name: A5オンデマンド本
+      class: label-format
   publish:
     date: 2012-09-02
     event: COMITIA101

@@ -43,6 +43,7 @@ title: 同人活動
 <% end %>
 
 <h2>個人誌</h2>
+<p>すべて一次創作（オリジナル）作品です。</p>
 <ul class="media-list">
   <div class="row books-grid">
     <% data.books.each do |book| %>
@@ -60,7 +61,11 @@ title: 同人活動
 
         <div class="media-body">
           <h3 class="media-heading"><%= book.title %></h3>
-          <p><%= book.desc %></p>
+          <ul class="labels">
+            <% book.labels.each do |label| %>
+            <li class="label <%= label['class'] %>"><%= label.name %></li>
+            <% end %>
+          </ul>
           <dl class="book-description">
             <dt>発行日</dt>
             <dd>
@@ -69,12 +74,9 @@ title: 同人活動
               (<%= book.publish.event %>)
               <% end %>
             </dd>
-            <dt>在庫</dt>
+            <dt>在　庫</dt>
             <dd><%= book.stock %></dd>
           </dl>
-          <% if book.comment %>
-          <p><%= book.comment %></p>
-          <% end %>
         </div>
       </li>
     </div><!-- .col-lg-6 -->

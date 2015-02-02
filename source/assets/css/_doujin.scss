@@ -13,9 +13,9 @@
     dt {
         float: left;
         clear: left;
-        font-weight: normal;
+        font-weight: bold;
         &:after {
-            content: ':\00a0';
+            content: "\00a0";
         }
     }
 }
@@ -43,6 +43,11 @@
     border-radius: 0;
 }
 
+.labels {
+    padding: 0;
+    margin-bottom: ($line-height-computed / 2);
+}
+
 .label-illust {
     background-color: #75ace3;
 }
@@ -51,11 +56,26 @@
     background-color: #a0be79;
 }
 
+.label-other {
+    background-color: #888;
+}
+
+.label-format {
+    background-color: #8cc2d9;
+}
+
+
 .books-grid {
     .media {
-        margin-bottom: 15px;
+        margin-bottom: 25px;
     }
-    margin-bottom: -15px;
+    margin-bottom: -25px; // reset .media's margin
+
+    .media-heading {
+        padding-bottom: 4px;
+        margin-bottom: 8px;
+        border-bottom: 1px dashed #ccc;
+    }
 }
 
 .media-list + h2 {
@@ -70,6 +90,10 @@
     @include thumbnail(150px, 200px);
     > img {
         border: 1px solid #eee;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        @include thumbnail(300px, 400px);
     }
 }
 
