@@ -1,8 +1,8 @@
-<h2>更新情報</h2>
+<h2>過去の更新</h2>
+<p>※リンク先が無効になっている場合があります。</p>
 <dl class="updates">
-<% latest_updates.each do |update| %>
+<% old_updates.each do |update| %>
   <dt><%= time_tag update.date %></dt>
   <dd><a href="<%= update.link %>"><%= update.content %></a></dd>
 <% end %>
 </dl>
-<p><a href="/old-updates">過去の更新</a></p>

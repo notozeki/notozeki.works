@@ -2,35 +2,45 @@
 title: 同人活動
 ---
 <p>
-  主にオリジナルの漫画・イラストの制作をしています。創作オンリーイベント<a href="http://www.comitia.co.jp">COMITIA</a>に多く参加しています。
+  主にオリジナルの漫画・イラストの制作をしています。<a href="http://www.comitia.co.jp">COMITIA</a>を中心に、同人イベントに不定期に参加しています。
 </p>
 
 <h2 id="upnext">参加予定のイベント</h2>
+<% if upnext_events.empty? %>
+<p>現在、参加予定のイベントはありません。</p>
+<% else %>
 <ul class="media-list">
+  <% upnext_events.each do |event| %>
   <li class="media">
     <div class="media-left">
-      <a href="/assets/img/comitia111cc.png" class="circle-cut-thumbnail">
-        <img src="/assets/img/comitia111cc.png" alt="COMITIA111サークルカット">
+      <% if event.circlecut %>
+      <a href="<%= event.circlecut %>" class="circle-cut-thumbnail">
+        <img src="<%= event.circlecut %>" alt="<%= event.name %> サークルカット">
       </a>
+      <% else %>
+      <img src="<%= lorem.image('150x150', text: 'no image', background_color: 'eee') %>">
+      <% end %>
     </div>
 
     <div class="media-body">
       <h3 class="media-heading">
-        COMITIA111 <small><a href="http://www.comitia.co.jp" class="external">公式サイト</a></small>
+        <%= event.name %>
+        <% if event.url %>
+        <small><a href="<%= event.url %>" class="external">公式サイト</a></small>
+        <% end %>
       </h3>
-      <p><time datetime="2015-02-01">2015年2月1日(日)</time> 東京ビッグサイト東5・6ホール</p>
+      <p><%= time_tag_ja event.date, with_weekday: true %> <%= event.place %></p>
       <dl class="event-description">
-        <dt>スペース</dt>
-        <dd><strong>J18b</strong> ロヒス屋</dd>
-        <dt>頒布物</dt>
-        <dd>
-          漫画短篇集『一頁漫画まとめ』 / 予価 ¥100 /
-          <a href="http://pixiv.net/i/48472892" class="external">詳細</a>
-        </dd>
+        <% event.desc.each do |key, value| %>
+        <dt><%= key %></dt>
+        <dd><%= value %></dd>
+        <% end %>
       </dl>
     </div>
   </li>
+  <% end %>
 </ul>
+<% end %>
 
 <h2>個人誌</h2>
 <ul class="media-list">

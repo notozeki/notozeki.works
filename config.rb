@@ -23,7 +23,7 @@ helpers do
     active = path == '/' ? (here == '/') : here.start_with?(path)
     content_tag :li, class: (active ? 'active' : '') do
       if active
-        link_to "#{text} <span class=\"sr-only\">(今見ているページ)</span>", path
+        link_to text + '<span class="sr-only">(今見ているページ)</span>', path
       else
         link_to text, path
       end
@@ -37,10 +37,33 @@ helpers do
     path.sub!(/index.html$/, '')
   end
 
-  def time_tag_ja(date)
+  def time_tag(date)
     content_tag :time, datetime: date.strftime('%F') do
-      date.strftime('%Y年%-m月%-d日')
+      date.strftime('%Y.%m.%d')
     end
+  end
+
+  def time_tag_ja(date, with_weekday: false)
+    content_tag :time, datetime: date.strftime('%F') do
+      if with_weekday
+        weekday = %w(日 月 火 水 木 金 土)[date.wday]
+        date.strftime('%Y年%-m月%-d日') + "(#{weekday})"
+      else
+        date.strftime('%Y年%-m月%-d日')
+      end
+    end
+  end
+
+  def upnext_events
+    data.events.select{|event| event.date > Date.today }
+  end
+
+  def latest_updates
+    data.updates.reject(&:deprecated).sort_by(&:date).reverse
+  end
+
+  def old_updates
+    data.updates.select(&:deprecated).sort_by(&:date).reverse
   end
 end
 

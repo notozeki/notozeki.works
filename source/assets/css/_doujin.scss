@@ -10,7 +10,6 @@
 
 @mixin description-list {
     list-style-type: none;
-    margin-bottom: ($line-height-computed / 2); // equal to margin of <p>
     dt {
         float: left;
         clear: left;

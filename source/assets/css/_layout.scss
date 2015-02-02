@@ -26,6 +26,10 @@ a.external:after {
     color: #ccc;
 }
 
+dl {
+    margin-bottom: ($line-height-computed / 2); // equal to margin of <p>
+}
+
 .footer {
     margin: 20px 0 25px 0;
     padding-top: 20px;
