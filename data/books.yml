@@ -1,3 +1,11 @@
+- title: 一頁漫画まとめ
+  cover: /assets/img/1page.png
+  desc: オリジナル / 漫画 / A5コピー本
+  publish:
+    date: 2015-02-01
+    event: COMITIA111
+  stock: なし
+
 - title: 長男はじめ 長女にのめ
   cover: /assets/img/hajime-ninome.png
   desc: オリジナル / 漫画 / B5コピー本
