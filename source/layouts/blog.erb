@@ -3,12 +3,17 @@
     <header class="blog-header">
       <div class="row">
         <div class="col-md-2">
-          <time class="blog-pubdate" pubdate datetime="<%= current_article.date.strftime('%F') %>">
-            <%= current_article.date.strftime('%F %a') %>
-          </time>
+          <p class="blog-pubdate">
+            <%= time_tag current_article.date %>
+          </p>
         </div>
         <div class="col-md-10">
           <h2 class="blog-title"><%= current_article.title %></h2>
+          <ul class="labels">
+            <% current_article.tags.each do |tag| %>
+            <li class="label label-tag"><span class="glyphicon glyphicon-tag"></span> <%= tag %></li>
+            <% end %>
+          </ul>
         </div>
       </div>
     </header>

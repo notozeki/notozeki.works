@@ -10,7 +10,7 @@ set :partials_dir, 'partials'
 set :trailing_slash, false
 
 set :markdown_engine, :redcarpet
-set :markdown, tables: true, autolink: true, fenced_code_blocks: true
+set :markdown, tables: true, autolink: true, fenced_code_blocks: true, strikethrough: true
 
 # Helpers
 helpers do
