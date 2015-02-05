@@ -57,17 +57,9 @@ body.blog {
 }
 
 .blog-articles {
-    list-style-type: none;
-
-    dt {
-        float: left;
-        clear: left;
-        &:after {
-            content: '\00a0';
-        }
-    }
+    @include description-list;
 }
 
 .label-tag {
-    background-color: $brand-info;
+    background-color: lighten($brand-primary, 20%);
 }

@@ -8,18 +8,6 @@
     }
 }
 
-@mixin description-list {
-    list-style-type: none;
-    dt {
-        float: left;
-        clear: left;
-        font-weight: bold;
-        &:after {
-            content: "\00a0";
-        }
-    }
-}
-
 @media (max-width: $screen-xs-max) {
     .media {
         @include make-row;
@@ -49,19 +37,19 @@
 }
 
 .label-illust {
-    background-color: #75ace3;
+    background-color: $brand-info;
 }
 
 .label-comic {
-    background-color: #a0be79;
+    background-color: $brand-success;
 }
 
 .label-other {
-    background-color: #888;
+    background-color: gray;
 }
 
 .label-format {
-    background-color: #8cc2d9;
+    background-color: lighten($brand-primary, 20%);
 }
 
 
@@ -106,13 +94,7 @@
 }
 
 .contributions {
-    dt {
-        margin-top: 10px;
-    }
-    dt:first-child {
-        margin-top: 0;
-    }
-    dd {
-        margin-bottom: 4px;
+    dt:not(:first-child) {
+        margin-top: ($line-height-computed / 2);
     }
 }

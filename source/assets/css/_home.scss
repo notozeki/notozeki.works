@@ -1,13 +1,6 @@
 .updates {
-    list-style-type: none;
-
-    dt {
-        float: left;
-        clear: left;
-        &:after {
-            content: '\00a0';
-        }
-    }
+    @include description-list;
+    margin-bottom: ceil($line-height-computed * 0.2);
 }
 
 .profile-heading {
@@ -16,7 +9,7 @@
     border-bottom: 1px dashed #ccc;
 }
 
-.icon {
+.profile-icon {
     float: right;
     padding-left: 20px;
     > img {

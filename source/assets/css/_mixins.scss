@@ -1,0 +1,9 @@
+@mixin description-list {
+    dt {
+        float: left;
+        clear: left;
+        &:after {
+            content: "\00a0";
+        }
+    }
+}
