@@ -24,7 +24,7 @@ title: コメントフォーム
       </div>
       <div class="form-group">
         <label for="comment-body">コメント</label>
-        <textarea class="form-control" name="body" id="comment-body" rows="8" tabindex="3"></textarea>
+        <textarea name="body" class="form-control" id="comment-body" rows="8" tabindex="3"></textarea>
       </div>
       <input type="hidden" name="referer" id="comment-referer">
       <button type="submit" class="btn btn-default" tabindex="4">送信</button>
@@ -43,8 +43,9 @@ title: コメントフォーム
   }
 
   document.addEventListener('DOMContentLoaded', function () {
-    var rowParams = location.href.split('?')[1].split('&');
-    var params = rowParams.reduce(function (res, param) {
+    var query = location.href.split('?')[1];
+    var rawParams = query ? query.split('&') : [];
+    var params = rawParams.reduce(function (res, param) {
       var pair = param.split('=');
       res[pair[0]] = pair[1];
       return res;
