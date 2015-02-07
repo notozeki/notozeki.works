@@ -1,0 +1,63 @@
+---
+title: コメントフォーム
+---
+<h2>コメントフォーム</h2>
+<div class="row">
+  <div class="col-lg-5">
+    <p>ここでは、notozekiに一方的にコメントを送りつけることができます。以下の点にご留意ください。</p>
+    <ul>
+      <li>いただいたコメントを外部に公開することはありません。</li>
+      <li>いかなる内容であれ、ここからいただいたコメントには返信いたしません。問い合わせなど、返信が必要な連絡には<a href="mailto:notozeki@gmail.com">メール</a>などの別の手段をご利用ください。</li>
+      <li>コメントはGoogleのサーバに送られ、保存されます。Googleが信用できない・嫌いな方は使用をお控えください。</li>
+    </ul>
+  </div>
+
+  <div class="col-lg-7">
+    <form action="https://script.google.com/macros/s/AKfycbwtMVt6z8gxdDyBXIpBgoHBKzxZJJyAvue5snL1S96vVCuLHu4/exec" method="POST" onsubmit="return validate();">
+      <div class="form-group">
+        <label for="comment-name" class="optional">お名前</label>
+        <input type="text" name="name" class="form-control" id="comment-name" tabindex="1">
+      </div>
+      <div class="form-group">
+        <label for="comment-subject" class="optional">件名</label>
+        <input type="text" name="subject" class="form-control" id="comment-subject" tabindex="2">
+      </div>
+      <div class="form-group">
+        <label for="comment-body">コメント</label>
+        <textarea class="form-control" name="body" id="comment-body" rows="8" tabindex="3"></textarea>
+      </div>
+      <input type="hidden" name="referer" id="comment-referer">
+      <button type="submit" class="btn btn-default" tabindex="4">送信</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  function validate() {
+    var body = document.getElementById('comment-body');
+    if (body.value.trim && body.value.trim() == '') {
+      alert('コメントを入力してください。');
+      return false;
+    }
+    return confirm('コメントを送信します。よろしいですか？');
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var rowParams = location.href.split('?')[1].split('&');
+    var params = rowParams.reduce(function (res, param) {
+      var pair = param.split('=');
+      res[pair[0]] = pair[1];
+      return res;
+    }, {});
+
+    if (params['subject'] && params['subject'] != '') {
+      var subject = document.getElementById('comment-subject');
+      subject.value = decodeURIComponent(params['subject'].replace(/\+/g, ' '));
+    }
+
+    if (params['referer'] && params['referer'] != '') {
+      var subject = document.getElementById('comment-referer');
+      subject.value = decodeURIComponent(params['referer']);
+    }
+  }, false);
+</script>

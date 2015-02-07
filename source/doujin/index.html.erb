@@ -77,6 +77,7 @@ title: 同人活動
             <dt>在　庫</dt>
             <dd><%= book.stock %></dd>
           </dl>
+          <%= comment_button "『#{strip_tags book.title}』感想" %>
         </div>
       </li>
     </div><!-- .col-lg-6 -->

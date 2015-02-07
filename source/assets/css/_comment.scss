@@ -1,0 +1,12 @@
+body.comment {
+    .form-control {
+        font-size: 14px;
+    }
+
+    .optional:after {
+        content: " (任意)";
+        font-size: $font-size-small;
+        font-weight: normal;
+        color: gray;
+    }
+}

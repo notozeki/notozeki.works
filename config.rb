@@ -65,6 +65,13 @@ helpers do
   def old_updates
     data.updates.select(&:deprecated).sort_by(&:date).reverse
   end
+
+  def comment_button(subject)
+    link_to '<span class="glyphicon glyphicon-pencil"></span> 感想を送る',
+            '/comment',
+            query: { subject: subject, referer: normalize_path(current_path) },
+            class: 'btn btn-default btn-sm'
+  end
 end
 
 # Extensions
