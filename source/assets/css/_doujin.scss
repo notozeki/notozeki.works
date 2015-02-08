@@ -52,6 +52,12 @@
     background-color: lighten($brand-primary, 20%);
 }
 
+.btn-booth {
+    @include button-variant(#fff, #e6302d, darken(#e6302d, 5%));
+    &:after {
+        content: "(BOOTH)";
+    }
+}
 
 .books-grid {
     .media {

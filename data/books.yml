@@ -9,6 +9,9 @@
     date: 2015-02-01
     event: COMITIA111
   stock: なし
+  shops:
+    - link: https://notozeki.booth.pm/items/74185
+      class: btn-booth
 
 - title: 長男はじめ 長女にのめ
   cover: /assets/img/hajime-ninome.png

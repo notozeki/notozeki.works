@@ -43,7 +43,7 @@ title: 同人活動
 <% end %>
 
 <h2>個人誌</h2>
-<p>すべて一次創作（オリジナル）作品です。</p>
+<p>すべて一次創作（オリジナル）作品です。基本的に同人イベントにて頒布していますが、一部の作品はオンラインで電子版(PDF)を購入できます。</p>
 <ul class="media-list">
   <div class="row books-grid">
     <% data.books.each do |book| %>
@@ -77,6 +77,9 @@ title: 同人活動
             <dt>在　庫</dt>
             <dd><%= book.stock %></dd>
           </dl>
+          <% (book.shops || []).each do |shop| %>
+          <a href="<%= shop.link %>" class="btn <%= shop['class'] %> btn-sm" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span> 電子版を買う</a>
+          <% end %>
           <%= comment_button "『#{strip_tags book.title}』感想" %>
         </div>
       </li>
