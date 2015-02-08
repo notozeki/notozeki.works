@@ -8,32 +8,12 @@
     }
 }
 
-@media (max-width: $screen-xs-max) {
-    .media {
-        @include make-row;
-    }
-    .media-left {
-        @include make-xs-column(12);
-    }
-    .media-body {
-        @include make-xs-column(12);
-        margin-top: 10px;
-    }
-}
-
 .media-body {
     width: 100%;
-}
 
-.label { // customize Bootstrap's .label
-    padding: .2em .6em;
-    font-weight: normal;
-    border-radius: 0;
-}
-
-.labels {
-    padding: 0;
-    margin-bottom: ($line-height-computed / 2);
+    .btn {
+        margin-bottom: 6px;
+    }
 }
 
 .label-illust {
@@ -85,10 +65,6 @@
     > img {
         border: 1px solid #eee;
     }
-
-    @media (max-width: $screen-xs-max) {
-        @include thumbnail(300px, 400px);
-    }
 }
 
 .event-description {
@@ -102,5 +78,36 @@
 .contributions {
     dt:not(:first-child) {
         margin-top: ($line-height-computed / 2);
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .media {
+        @include make-row;
+    }
+
+    .media-left {
+        @include make-xs-column(12);
+        text-align: center;
+    }
+
+    .media-body {
+        @include make-xs-column(12);
+        margin-top: 10px;
+    }
+
+    .books-grid {
+        .media {
+            margin-top: ($line-height-computed / 2);
+            margin-bottom: 50px;
+        }
+        margin-bottom: -50px; // reset .media's margin
+    }
+
+    .book-cover-thumbnail {
+        @include thumbnail(100%, none);
+        > img {
+            width: 200px;
+        }
     }
 }

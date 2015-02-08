@@ -36,6 +36,17 @@ dl {
     margin-bottom: ($line-height-computed / 2); // equal to margin of <p>
 }
 
+.label { // customize Bootstrap's .label
+    padding: .2em .6em;
+    font-weight: normal;
+    border-radius: 0;
+}
+
+.labels {
+    padding: 0;
+    margin-bottom: ($line-height-computed / 2);
+}
+
 .footer {
     margin: 20px 0 25px 0;
     padding-top: 20px;
