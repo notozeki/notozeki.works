@@ -70,3 +70,11 @@ body.blog {
 .label-tag {
     background-color: lighten($brand-primary, 20%);
 }
+
+.pager {
+    margin: ($line-height-computed / 2 - 6) 0 0;
+    font-size: ($font-size-base - 1);
+    li a {
+        margin-top: 6px;
+    }
+}

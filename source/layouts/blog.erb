@@ -24,4 +24,27 @@
       </div>
     </div>
   </article>
+
+  <div class="row">
+    <div class="col-md-offset-2 col-md-10">
+      <nav>
+        <ul class="pager">
+          <% if (prev_article = current_article.previous_article) %>
+          <li class="previous">
+            <a href="<%= prev_article.url %>">
+              <span class="fa fa-angle-double-left" aria-hidden="true"></span> <%= prev_article.title %>
+            </a>
+          </li>
+          <% end %>
+          <% if (next_article = current_article.next_article) %>
+          <li class="next">
+            <a href="<%= next_article.url %>">
+              <%= next_article.title %> <span class="fa fa-angle-double-right" aria-hidden="true"></span>
+            </a>
+          </li>
+          <% end %>
+        </ul>
+      </nav>
+    </div>
+  </div>
 <% end %>
