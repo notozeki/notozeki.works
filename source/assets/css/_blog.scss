@@ -10,14 +10,21 @@ body.blog {
     }
 
     figure {
-        width: 200px;
         margin-bottom: $line-height-computed;
         img {
-            max-width: 200px;
+            max-width: 100%;
         }
         figcaption {
             margin-top: 4px;
             font-size: $font-size-small;
+            color: gray;
+        }
+    }
+
+    figure.portrait {
+        width: 200px;
+        img {
+            max-width: 200px;
         }
     }
 

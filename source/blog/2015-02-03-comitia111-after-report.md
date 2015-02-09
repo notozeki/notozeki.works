@@ -9,7 +9,7 @@ tags: コミティア, COMITIA111
 ほんとはレポート漫画でも描こうと思ったのですが、結構時間がかかりそうだったので今回はあきらめました\_(:3 」∠)\_
 文章だけでご勘弁ください。
 
-<figure class="blog-left">
+<figure class="portrait blog-left">
   <img src="/assets/img/1page.png" alt="新刊表紙">
   <figcaption>
     新刊『一頁漫画まとめ』
@@ -27,7 +27,7 @@ Twitterにアップしていた1ページ漫画をまとめた『一頁漫画ま
 
 <div class="clearfix"></div>
 
-<figure class="blog-right">
+<figure class="portrait blog-right">
   <img src="/assets/img/IMG_1868.JPG" alt="めざし">
   <figcaption>
     きりんさんからもらっためざし
