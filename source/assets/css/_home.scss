@@ -25,10 +25,13 @@
 }
 
 .social-links {
-    padding: 0;
-    font-size: floor($font-size-base * 1.1);
+    padding-left: 2px;
+    font-size: floor($font-size-base * 1.125);
     li {
         display: inline;
+    }
+    .label {
+        padding: .3em .7em;
     }
 }
 
