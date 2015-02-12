@@ -7,7 +7,7 @@
     border-radius: 0;
 
     .navbar-brand {
-        padding-left: 0;
+        padding: $navbar-padding-vertical 0;
         font-family: Lato, $font-family-sans-serif;
         font-size: $font-size-h1;
         color: #222;

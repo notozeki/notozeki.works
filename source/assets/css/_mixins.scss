@@ -18,3 +18,9 @@
         }
     }
 }
+
+@mixin heading-underline {
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+    border-bottom: 1px dashed #ccc;
+}

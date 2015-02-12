@@ -6,9 +6,7 @@
 }
 
 .profile-heading {
-    padding-bottom: 4px;
-    margin-bottom: 8px;
-    border-bottom: 1px dashed #ccc;
+    @include heading-underline;
 }
 
 .profile-icon {

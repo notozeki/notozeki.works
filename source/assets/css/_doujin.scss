@@ -46,9 +46,7 @@
     margin-bottom: -25px; // reset .media's margin
 
     .media-heading {
-        padding-bottom: 4px;
-        margin-bottom: 8px;
-        border-bottom: 1px dashed #ccc;
+        @include heading-underline;
     }
 }
 
