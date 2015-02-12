@@ -1,12 +1,6 @@
 - date: 2015-01-11
+  type: イベント
+  class: label-event
   content: COMITIA111の情報を掲載しました。
   link: /doujin/#upnext
   deprecated: true
-
-- date: 2015-02-03
-  content: ブログ更新「COMITIA111に参加しました」
-  link: /blog/comitia111-after-report
-
-- date: 2015-02-09
-  content: ブログ更新「BOOTHで漫画のダウンロード販売を始めました」
-  link: /blog/start-online-sales-on-booth

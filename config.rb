@@ -58,12 +58,37 @@ helpers do
     data.events.select{|event| event.date > Date.today }
   end
 
-  def latest_updates
-    data.updates.reject(&:deprecated).sort_by(&:date).reverse
+  def updates
+    (site_updates + blog_updates).sort_by(&:date).reverse
   end
 
-  def old_updates
-    data.updates.select(&:deprecated).sort_by(&:date).reverse
+  def latest_updates(max=8)
+    updates[0..max]
+  end
+
+  def old_updates(max=8)
+    old = updates[(max+1)..-1] || []
+    (old + site_updates_deprecated).sort_by(&:date).reverse
+  end
+
+  def site_updates
+    data.updates.reject(&:deprecated)
+  end
+
+  def site_updates_deprecated
+    data.updates.select(&:deprecated)
+  end
+
+  def blog_updates
+    blog.articles.map do |article|
+      Thor::CoreExt::HashWithIndifferentAccess.new(
+        date: article.date.to_datetime,
+        content: article.title,
+        link: article.url,
+        type: 'ブログ',
+        class: 'label-blog'
+      )
+    end
   end
 
   def comment_button(subject)

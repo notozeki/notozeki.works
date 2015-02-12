@@ -3,6 +3,6 @@
 <dl class="updates">
 <% old_updates.each do |update| %>
   <dt><%= time_tag update.date %></dt>
-  <dd><a href="<%= update.link %>"><%= update.content %></a></dd>
+  <dd><span class="label <%= update['class'] %>"><%= update.type %></span> <a href="<%= update.link %>"><%= update.content %></a></dd>
 <% end %>
 </dl>

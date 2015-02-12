@@ -2,7 +2,7 @@
 <dl class="updates">
 <% latest_updates.each do |update| %>
   <dt><%= time_tag update.date %></dt>
-  <dd><a href="<%= update.link %>"><%= update.content %></a></dd>
+  <dd><span class="label <%= update['class'] %>"><%= update.type %></span> <a href="<%= update.link %>"><%= update.content %></a></dd>
 <% end %>
 </dl>
 <p><a href="/old-updates">過去の更新</a></p>

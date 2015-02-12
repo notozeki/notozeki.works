@@ -37,9 +37,10 @@ dl {
 }
 
 .label { // customize Bootstrap's .label
-    padding: .2em .6em;
+    padding: .2em .6em .15em;
     font-weight: normal;
     border-radius: 0;
+    vertical-align: 1px; // HOTFIX
 }
 
 .labels {
