@@ -1,9 +1,20 @@
 @mixin description-list {
     dt {
-        float: left;
-        clear: left;
         &:after {
             content: "\00a0";
+        }
+    }
+
+    @media (min-width: $screen-sm-min) {
+        dt {
+            float: left;
+            clear: left;
+        }
+    }
+
+    @media (max-width: $screen-xs-max) {
+        dt {
+            margin-top: ($line-height-computed / 4);
         }
     }
 }

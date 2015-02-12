@@ -1,6 +1,8 @@
 .updates {
     @include description-list;
-    margin-bottom: ceil($line-height-computed * 0.2);
+    @media (min-width: $screen-sm-min) {
+        margin-bottom: ($line-height-computed / 4);
+    }
 }
 
 .profile-heading {
