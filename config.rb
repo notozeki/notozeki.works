@@ -97,6 +97,18 @@ helpers do
             query: { subject: subject, referer: normalize_path(current_path) },
             class: 'btn btn-default btn-sm'
   end
+
+  def page_javascripts
+    js_files = sitemap.resources.select do |r|
+      r.content_type == 'application/javascript'
+    end.map do |r|
+      File.basename(r.path, '.*')
+    end
+
+    page_classes.split(' ').select do |pagename|
+      js_files.include? pagename
+    end
+  end
 end
 
 # Extensions

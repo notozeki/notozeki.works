@@ -24,6 +24,9 @@
       </footer>
     </div>
 
-    <%= javascript_include_tag 'bootstrap' %>
+    <%= javascript_include_tag 'application' %>
+    <% page_javascripts.each do |js| %>
+    <%= javascript_include_tag js %>
+    <% end %>
   </body>
 </html>
