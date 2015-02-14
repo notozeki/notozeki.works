@@ -24,6 +24,23 @@ $headings: h1, h2, h3, ".h1", ".h2", ".h3";
     }
 }
 
+@media (min-width: $screen-sm-min) {
+    body {
+        /*! Background pattern from subtlepatterns.com */
+        background-image: url('/assets/img/transp_bg.png');
+        background-attachment: fixed;
+    }
+
+    .container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border: 1px solid #ddd;
+        background: #fff;
+    }
+}
+
 a.external:after {
     @extend .glyphicon;
     content: "\e164"; // .glyphicon-new-window
