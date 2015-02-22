@@ -1,0 +1,8 @@
+h2 過去の更新
+p ※リンク先の内容が変更または無効になっている場合があります。
+dl.updates
+  - for update in old_updates
+    dt = time_tag update.date
+    dd
+      span> class="label #{update['class']}" = update.type
+      = link_to update.content, update.link

@@ -1,0 +1,87 @@
+---
+title: 同人活動
+---
+p 主にオリジナルの漫画・イラストの制作をしています。#{link_to 'COMITIA', 'http://www.comitia.co.jp'}を中心に、同人イベントに不定期に参加しています。
+
+h2#upnext 参加予定のイベント
+- if upnext_events.empty?
+  p 現在、参加予定のイベントはありません。
+- else
+  ul.media-list
+    - for event in upnext_events
+      li.media
+        div.media-left
+          - if event.circlecut
+            = link_to event.circlecut, class: 'circle-cut-thumbnail' do
+              = image_tag event.circlecut, alt: "#{event.name} サークルカット"
+          - else
+            = image_tag lorem.image('150x150', text: 'no image', background_color: 'eee'),
+                        alt: 'サークルカット画像はありません'
+
+        div.media-body
+          h3.media-heading
+            => event.name
+            - if event.url
+              small = link_to event.url, class: 'external' do
+                | 公式サイト
+          p #{time_tag_ja event.date, with_weekday: true} #{event.place}
+          dl.event-description
+            - for key, value in event.desc
+              dt #{key}
+              dd #{value}
+
+h2 個人誌
+p すべて一次創作（オリジナル）作品です。基本的に同人イベントにて頒布していますが、一部の作品はオンラインで電子版(PDF)を購入できます。
+ul.media-list
+  .row.books-grid
+    - for book in data.books
+      .col-lg-6
+        li.media
+          div.media-left
+            - if book.cover
+              = link_to book.cover, class: 'book-cover-thumbnail' do
+                = image_tag book.cover, alt: "『#{strip_tags book.title}』表紙"
+            - else
+              = image_tag lorem.image('150x200', text: 'no image', background_color: 'eee'),
+                          alt: '表紙画像はありません'
+
+          div.media-body
+            h3.media-heading = book.title
+            ul.labels
+              - for label in book.labels
+                li> class="label #{label['class']}" = label.name
+            dl.book-description
+              dt 発行日
+              dd
+                = time_tag_ja book.publish.date
+                - if book.publish.event
+                  | #{book.publish.event}
+              dt 在庫
+              dd = book.stock
+            - for shop in (book.shops || [])
+              => link_to shop.link, class: "btn #{shop['class']} btn-sm", target: '_blank' do
+                | #{gl 'shopping-cart'} 電子版を買う
+            = link_to "#{gl 'pencil'} 感想を送る",
+                      '/comment.html',
+                      query: {subject: "『#{strip_tags book.title}』感想", referer: normalize_path(current_path)},
+                      class: 'btn btn-default btn-sm'
+
+h2 その他 <small>合同誌・寄稿など</small>
+dl.contributions
+  dt 2014年
+  dd
+    span.label.label-illust> イラスト
+    | #{link_to 'カガミツキ', 'https://twitter.com/nyogetsu'}さんの個人誌総集編『#{link_to 'ミラームーンズ 1stMIX', 'http://mmoon.soragoto.net/achade/mm1/'}』の別冊トリビュート本にゲスト参加
+  dd
+    span.label.label-illust> イラスト
+    | #{link_to 'おけらびあすら', 'https://twitter.com/oke_rabbit'}さんのポストカード集『#{link_to '冬のインクがなくなる前に', 'http://pixiv.net/i/47189065'}』にゲスト参加
+
+  dt 2012年
+  dd
+    span.label.label-illust> イラスト
+    | サークル#{link_to '(旧)彳', 'http://memorial.gymb.jp'}の合同誌『#{link_to 'ほたて缶', 'http://memorial.gymb.jp/comic/hotate'}』にゲスト参加
+
+  dt 2011年
+  dd
+    span.label.label-comic> 漫画
+    | サークル#{link_to '(旧)彳', 'http://memorial.gymb.jp/'}の合同誌『#{link_to '屋根から降る雨', 'http://memorial.gymb.jp/comic/yaneame'}』に参加

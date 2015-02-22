@@ -1,0 +1,16 @@
+nav.navbar.navbar-custom
+  div.navbar-header
+    button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu"
+      span.sr-only メニューを表示
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+    = link_to '/', class: 'navbar-brand' do
+      span.logo-notozeki> notozeki
+      span.logo-works works
+
+  div#main-menu class="navbar-collapse collapse"
+    ul.nav.navbar-nav.navbar-right
+      = nav_link 'Home', '/'
+      = nav_link '同人活動', '/doujin/'
+      = nav_link 'ブログ', '/blog/'

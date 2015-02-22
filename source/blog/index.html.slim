@@ -1,0 +1,8 @@
+---
+title: ブログ
+---
+h2 ブログ記事一覧
+dl.blog-articles
+  - for article in blog.articles
+    dt = time_tag article.date
+    dd = link_to article.title, article.url

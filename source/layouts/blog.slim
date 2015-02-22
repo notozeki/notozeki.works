@@ -1,0 +1,26 @@
+= wrap_layout :layout do
+  article
+    header.blog-header
+      .row
+        .col-md-2
+          p.blog-pubdate = time_tag current_article.date
+        .col-md-10
+          h2.blog-title = current_article.title
+          ul.labels
+            - for tag in current_article.tags
+              li.label.label-tag> #{gl 'tag'} #{tag}
+
+    .row
+      .col-md-offset-2.col-md-10
+        == yield
+
+  .row
+    .col-md-offset-2.col-md-10
+      nav
+        ul.pager
+          - if (prev_article = current_article.previous_article)
+            li.previous = link_to prev_article.url do
+              | #{fa 'angle-double-left', hidden: true} #{prev_article.title}
+          - if (next_article = current_article.next_article)
+            li.next = link_to next_article.url
+              | #{next_article.title} #{fa 'angle-double-right', hidden: true}

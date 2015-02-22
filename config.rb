@@ -14,6 +14,9 @@ set :markdown, tables: true, autolink: true, fenced_code_blocks: true, strikethr
 
 # Helpers
 helpers do
+  #
+  # View helpers
+  #
   def make_title
     [current_page.data.title, config[:site_name]].compact.join(' | ')
   end
@@ -54,6 +57,17 @@ helpers do
     end
   end
 
+  def fa(name, hidden: false)
+    content_tag(:span, class: "fa fa-#{name}", 'aria-hidden' => hidden) {''}
+  end
+
+  def gl(name)
+    content_tag(:span, class: "glyphicon glyphicon-#{name}") {''}
+  end
+
+  #
+  # Pseudo-models
+  #
   def upnext_events
     data.events.select{|event| event.date > Date.today }
   end
@@ -67,16 +81,11 @@ helpers do
   end
 
   def old_updates(max=8)
-    old = updates[(max+1)..-1] || []
-    (old + site_updates_deprecated).sort_by(&:date).reverse
+    updates[(max+1)..-1] || []
   end
 
   def site_updates
     data.updates.reject(&:deprecated)
-  end
-
-  def site_updates_deprecated
-    data.updates.select(&:deprecated)
   end
 
   def blog_updates
@@ -88,25 +97,6 @@ helpers do
         type: 'ブログ',
         class: 'label-blog'
       )
-    end
-  end
-
-  def comment_button(subject)
-    link_to '<span class="glyphicon glyphicon-pencil"></span> 感想を送る',
-            '/comment',
-            query: { subject: subject, referer: normalize_path(current_path) },
-            class: 'btn btn-default btn-sm'
-  end
-
-  def page_javascripts
-    js_files = sitemap.resources.select do |r|
-      r.content_type == 'application/javascript'
-    end.map do |r|
-      File.basename(r.path, '.*')
-    end
-
-    page_classes.split(' ').select do |pagename|
-      js_files.include? pagename
     end
   end
 end
