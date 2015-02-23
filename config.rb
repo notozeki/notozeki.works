@@ -1,5 +1,6 @@
 # Config
 set :site_name, 'notozeki works'
+set :site_url, 'http://notozeki.works'
 
 set :css_dir, 'assets/css'
 set :js_dir, 'assets/js'
@@ -11,6 +12,8 @@ set :trailing_slash, false
 
 set :markdown_engine, :redcarpet
 set :markdown, tables: true, autolink: true, fenced_code_blocks: true, strikethrough: true
+
+set :blog_thumb_geometry, '150x150'
 
 # Helpers
 helpers do
@@ -63,6 +66,15 @@ helpers do
 
   def gl(name)
     content_tag(:span, class: "glyphicon glyphicon-#{name}") {''}
+  end
+
+  def thumb_path(orig_path)
+    geometry = config[:blog_thumb_geometry]
+    ['', config[:images_dir], geometry, orig_path].join('/')
+  end
+
+  def full_url(path)
+    config[:site_url] + path
   end
 
   #

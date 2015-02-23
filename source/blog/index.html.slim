@@ -7,9 +7,9 @@ ul.media-list.blog-articles
       div.media-left
         = link_to article.url do
           - if article.data.lead_image
-            = thumb_tag article.data.lead_image, '150x150#'
+            = thumb_tag article.data.lead_image, config[:blog_thumb_geometry] + '#'
           - else
-            = image_tag lorem.image('150x150', text: article.date.strftime('%F'), background_color: '#ffe')
+            = image_tag lorem.image(config[:blog_thumb_geometry], text: article.date.strftime('%F'), background_color: '#ffe')
       div.media-body
         header
           h3.media-heading.blog-title

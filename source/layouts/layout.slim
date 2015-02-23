@@ -7,6 +7,16 @@ html lang="ja"
 
     title = make_title
 
+    / Twitter Cards
+    - if current_article
+      meta name="twitter:card" content="summary"
+      meta name="twitter:site" content="@notozeki"
+      meta name="twitter:title" content=current_article.title
+      meta name="twitter:description" content=strip_tags(current_article.summary)
+      meta name="twitter:url" content=full_url(current_article.url)
+      - if current_article.data.lead_image
+        meta name="twitter:image" content=full_url(thumb_path(current_article.data.lead_image))
+
     = stylesheet_link_tag 'application'
     = stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'
 
