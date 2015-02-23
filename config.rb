@@ -106,9 +106,11 @@ activate :blog do |blog|
   blog.prefix = 'blog'
   blog.permalink = '{title}.html'
   blog.layout = 'blog'
+  blog.summary_length = nil
 end
 activate :autoprefixer
 activate :directory_indexes
+activate :dragonfly_thumbnailer
 
 # Rack middleware
 use Rack::GoogleAnalytics, tracker: 'UA-58422142-1'

@@ -4,6 +4,8 @@ title: BOOTHで漫画のダウンロード販売を始めました
 
 [BOOTH](https://booth.pm)にてネットショップを開設し、漫画の電子版(PDF)のダウンロード販売を始めました。
 
+READMORE
+
 <figure>
   <a href="https://notozeki.booth.pm/" target="_blank">
     <img src="https://asset.booth.pm/static-images/banner/468x60_01.png" alt="notozeki's BOOTH">

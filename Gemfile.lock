@@ -41,6 +41,10 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
+    dragonfly (1.0.7)
+      addressable (~> 2.3)
+      multi_json (~> 1.0)
+      rack
     erubis (2.7.0)
     execjs (2.2.2)
     ffi (1.9.6)
@@ -90,6 +94,9 @@ GEM
       rack-test (~> 0.6.2)
       thor (>= 0.15.2, < 2.0)
       tilt (~> 1.4.1, < 2.0)
+    middleman-dragonfly_thumbnailer (1.0.2)
+      dragonfly (>= 1.0.0)
+      middleman-core (~> 3.2)
     middleman-sprockets (3.3.10)
       middleman-core (~> 3.3)
       sprockets (~> 2.12.1)
@@ -155,6 +162,7 @@ DEPENDENCIES
   middleman (~> 3.3.6)
   middleman-autoprefixer (~> 2.1.2)
   middleman-blog
+  middleman-dragonfly_thumbnailer
   rack-google-analytics
   redcarpet
   sass (~> 3.4.7)

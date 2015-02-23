@@ -70,7 +70,13 @@ body.blog {
 }
 
 .blog-articles {
-    @include description-list;
+    .blog-title a {
+        color: $text-color;
+        &:hover,
+        &:focus {
+            color: $link-hover-color;
+        }
+    }
 }
 
 .label-tag {

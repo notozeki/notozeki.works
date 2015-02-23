@@ -1,13 +1,14 @@
 ---
 title: COMITIA111に参加しました
 tags: コミティア, COMITIA111
+lead_image: IMG_1867.JPG
 ---
-
-<img src="/assets/img/IMG_1867.JPG" alt="COMITIA111" class="blog-top">
 
 もう一昨日のことになりますが、2月1日に開催されたCOMITIA111にサークル参加しました。
 ほんとはレポート漫画でも描こうと思ったのですが、結構時間がかかりそうだったので今回はあきらめました\_(:3 」∠)\_
 文章だけでご勘弁ください。
+
+READMORE
 
 <figure class="portrait blog-left">
   <img src="/assets/img/1page.png" alt="新刊表紙">

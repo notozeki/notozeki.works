@@ -1,8 +1,24 @@
 ---
 title: ブログ
 ---
-h2 ブログ記事一覧
-dl.blog-articles
+ul.media-list.blog-articles
   - for article in blog.articles
-    dt = time_tag article.date
-    dd = link_to article.title, article.url
+    li.media
+      div.media-left
+        = link_to article.url do
+          - if article.data.lead_image
+            = thumb_tag article.data.lead_image, '150x150#'
+          - else
+            = image_tag lorem.image('150x150', text: article.date.strftime('%F'), background_color: '#ffe')
+      div.media-body
+        header
+          h3.media-heading.blog-title
+            = link_to article.url do
+              = article.title
+            small< = time_tag article.date
+          ul.labels
+            - for tag in article.tags
+              span.label.label-tag> #{fa 'tag'} #{tag}
+        p
+          = strip_tags article.summary
+          = link_to "#{fa 'angle-double-right'} 続きを読む", article.url
