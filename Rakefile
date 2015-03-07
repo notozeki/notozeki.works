@@ -1,7 +1,7 @@
 require 'rake/clean'
 
-SRC = "build/" # trailing slash is important!
-DST = "front.notozeki.org:/var/www/notozeki.works"
+build_dir = "build"
+s3_bucket = "notozeki.works"
 
 CLOBBER.include("build/")
 
@@ -14,7 +14,7 @@ end
 
 desc "deploy to server"
 task :deploy => "middleman:build" do
-  sh "rsync -rtv --delete #{SRC} #{DST}"
+  sh "aws s3 sync #{build_dir} s3://#{s3_bucket}"
 end
 
 def bundle_exec(cmd)
