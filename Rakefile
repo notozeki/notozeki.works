@@ -14,7 +14,7 @@ end
 
 desc "deploy to server"
 task :deploy => "middleman:build" do
-  sh "aws s3 sync #{build_dir} s3://#{s3_bucket}"
+  sh "aws s3 sync --delete #{build_dir} s3://#{s3_bucket}"
 end
 
 def bundle_exec(cmd)
