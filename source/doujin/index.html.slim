@@ -63,8 +63,8 @@ ul.media-list
                 | #{gl 'shopping-cart'} 電子版を買う
             = link_to "#{gl 'pencil'} 感想を送る",
                       '/comment.html',
-                      query: {subject: "『#{strip_tags book.title}』感想", referer: normalize_path(current_path)},
-                      class: 'btn btn-default btn-sm'
+                      class: 'comment-button btn btn-default btn-sm',
+                      data: {subject: "『#{strip_tags book.title}』感想", referer: normalize_path(current_path)}
 
 h2 その他 <small>合同誌・寄稿など</small>
 dl.contributions
@@ -85,3 +85,14 @@ dl.contributions
   dd
     span.label.label-comic> 漫画
     | サークル#{link_to '(旧)彳', 'http://memorial.gymb.jp/'}の合同誌『#{link_to '屋根から降る雨', 'http://memorial.gymb.jp/comic/yaneame'}』に参加
+
+javascript:
+  $(function () {
+    $('.comment-button').click(function () {
+      var btn = $(this);
+      var subject = btn.attr('data-subject');
+      var referer = btn.attr('data-referer');
+      sessionStorage.setItem('subject', subject);
+      sessionStorage.setItem('referer', referer);
+    });
+  });
