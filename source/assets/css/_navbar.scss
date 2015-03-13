@@ -6,6 +6,11 @@
     border-bottom: 1px solid #eeeeee;
     border-radius: 0;
 
+    .brand {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     .navbar-brand {
         padding: $navbar-padding-vertical 0;
         font-family: Lato, $font-family-sans-serif;
