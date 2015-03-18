@@ -55,7 +55,7 @@ ul.media-list
               dd
                 = time_tag_ja book.publish.date
                 - if book.publish.event
-                  | #{book.publish.event}
+                  '  (#{book.publish.event})
               dt 在庫
               dd = book.stock
             - for shop in (book.shops || [])
