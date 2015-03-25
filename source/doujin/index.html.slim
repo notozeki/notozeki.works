@@ -36,7 +36,7 @@ ul.media-list
   .row.books-grid
     - for book in data.books
       .col-lg-6
-        li.media
+        li.media id=book.id
           div.media-left
             - if book.cover
               = link_to book.cover, class: 'book-cover-thumbnail' do
