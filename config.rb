@@ -11,7 +11,14 @@ set :partials_dir, 'partials'
 set :trailing_slash, false
 
 set :markdown_engine, :redcarpet
-set :markdown, tables: true, autolink: true, fenced_code_blocks: true, strikethrough: true
+set :markdown, {
+  tables: true,
+  autolink: true,
+  fenced_code_blocks: true,
+  strikethrough: true,
+  hard_wrap: true,
+  footnotes: true
+}
 
 set :blog_thumb_geometry, '150x150'
 

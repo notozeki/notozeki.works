@@ -90,3 +90,11 @@ body.blog {
         margin-top: 6px;
     }
 }
+
+.footnotes {
+    font-size: $font-size-small;
+    margin-bottom: $line-height-computed;
+    li p {
+        margin-bottom: ($line-height-computed / 4);
+    }
+}
