@@ -8,14 +8,14 @@ tags: コミティア, 名古屋コミティア46, COMITIA112
 そんなサークル「自由帰還軌道」は、この春2つのイベントに参加します！　活発ですね！
 
 <figure>
-  <img src="/assets/img/nagoya-comitia46cc.jpg">
+  <img src="/assets/img/nagoya-comitia46cc.jpg" height="200px">
 </figure>
 
 まず1つ目は、4月5日に開催される「[**名古屋コミティア46**](http://nagoya-comitia.daa.jp/)」です。そう、名古屋です。愛知県に行くのは2005年の愛知万博以来なので楽しみです（これ書くために調べてびっくりしたんですが、万博ももう10年前の話なんですね……）。
 そしてなんと名古屋ティアは、あの**きりんさん**([@kirinex](https://twitter.com/kirinex))のサークル「江月堂」さんと合同スペースなのです！　2人で合同誌のような何かを作って持っていくつもりです。きりんさんは本当に素敵な作品を描かれる方なので、ぜひ足をお運びください。ついでにぼくの作品も見てもらえれば嬉しいです。言い忘れてましたがスペースは**【F-25】**ですよ！
 
 <figure>
-  <img src="/assets/img/comitia112cc.png">
+  <img src="/assets/img/comitia112cc.png" height="200px">
 </figure>
 
 もう1つのイベント参加は、おなじみ東京で5月5日に開催される「[**COMITIA112**](http://www.comitia.co.jp/)」です。スペースは**【N09a】**ですよ！　今回は通路際の配置（お誕生日席ではない）でガクブルしてます。

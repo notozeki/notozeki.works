@@ -20,15 +20,16 @@ h2#upnext 参加予定のイベント
 
         div.media-body
           h3.media-heading
-            => event.name
+            = event.name
             - if event.url
-              small = link_to event.url, class: 'external' do
-                | 公式サイト
-          p #{time_tag_ja event.date, with_weekday: true} #{event.place}
+              small< = link_to '公式サイト', event.url, class: 'external'
+          p
+            => time_tag_ja event.date, with_weekday: true
+            span.text-nowrap = event.place
           dl.event-description
             - for key, value in event.desc
-              dt #{key}
-              dd #{value}
+              dt = key
+              dd = value
 
 h2 個人誌
 p すべて一次創作（オリジナル）作品です。基本的に同人イベントにて頒布していますが、一部の作品はオンラインで電子版(PDF)を購入できます。

@@ -85,9 +85,11 @@ body.blog {
 
 .pager {
     margin: ($line-height-computed / 2 - 6) 0 0;
-    font-size: ($font-size-base - 1);
+    font-size: ceil($font-size-base * 0.9);
     li a {
         margin-top: 6px;
+        padding-top: 3px;
+        padding-bottom: 3px;
     }
 }
 

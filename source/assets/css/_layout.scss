@@ -11,7 +11,7 @@ $headings: h1, h2, h3, ".h1", ".h2", ".h3";
         > #{$h}:before {
             @extend .glyphicon;
             content: "\e080"; // .glyphicon-chevron-right
-            font-size: $font-size-small;
+            font-size: $font-size-small !important;
             margin-right: .5em;
             vertical-align: .25em;
         }
@@ -45,12 +45,16 @@ a.external:after {
     @extend .glyphicon;
     content: "\e164"; // .glyphicon-new-window
     margin-right: .2em;
-    font-size: x-small;
-    color: #ccc;
+    font-size: 80% !important;
+    color: #aaa;
 }
 
 dl {
     margin-bottom: ($line-height-computed / 2); // equal to margin of <p>
+}
+
+.glyphicon {
+    font-size: 85%;
 }
 
 .label { // customize Bootstrap's .label

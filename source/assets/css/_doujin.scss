@@ -1,5 +1,5 @@
 @mixin thumbnail($width, $height) {
-    display: block;
+    display: inline-block;
     text-align: center;
     width: $width;
     > img {
@@ -102,6 +102,7 @@
         margin-bottom: -50px; // reset .media's margin
     }
 
+    .circle-cut-thumbnail,
     .book-cover-thumbnail {
         @include thumbnail(100%, none);
         > img {
