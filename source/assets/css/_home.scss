@@ -1,8 +1,9 @@
+.event-list {
+    @include description-list;
+}
+
 .updates {
     @include description-list;
-    @media (min-width: $screen-sm-min) {
-        margin-bottom: ($line-height-computed / 4);
-    }
 }
 
 .profile-heading {

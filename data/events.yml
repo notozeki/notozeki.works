@@ -12,8 +12,9 @@
   date: 2015-04-05
   place: 名古屋国際会議場 イベントホール
   circlecut: /assets/img/nagoya-comitia46cc.jpg
+  space: F-25
+  circle: 江月堂+自由帰還軌道
   desc:
-    スペース: <strong>【F-25】</strong>江月堂+自由帰還軌道
     頒布物: <a href="https://twitter.com/kirinex">きりんさん</a>との合同誌を予定
 
 - name: COMITIA112
@@ -21,6 +22,7 @@
   date: 2015-05-05
   place: 東京ビッグサイト 東4・5・6ホール
   circlecut: /assets/img/comitia112cc.png
+  space: N09a
+  circle: 自由帰還軌道
   desc:
-    スペース: <strong>【N09a】</strong>自由帰還軌道
     頒布物: (未定)

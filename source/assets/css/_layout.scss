@@ -69,6 +69,13 @@ dl {
     margin-bottom: ($line-height-computed / 2);
 }
 
+.space-no {
+    font-weight: bold;
+
+    &:before { content: "【"; }
+    &:after  { content: "】"; }
+}
+
 .footer {
     margin: 20px 0 25px 0;
     padding-top: 20px;

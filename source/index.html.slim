@@ -1,3 +1,19 @@
+- if upnext_events.any?
+  h2 イベント参加
+  dl.event-list
+    - for event in upnext_events
+      dt = time_tag event.date
+      dd
+        strong
+          - if event.url
+            = link_to event.name, event.url, class: 'external'
+          - else
+            = event.name
+        span.text-nowrap
+          span.space-no = event.space
+          = event.circle
+  p = link_to "#{fa 'angle-double-right'} 詳しく見る", '/doujin/#upnext'
+
 h2 更新情報
 dl.updates
   - for update in latest_updates
@@ -6,9 +22,7 @@ dl.updates
       span> class="label #{update['class']}" = update.type
       = link_to update.content, update.link
 - if old_updates.any?
-  p
-    = link_to 'old-updates.html' do
-      | #{fa 'angle-double-right'} 過去の更新
+  p = link_to "#{fa 'angle-double-right'} 過去の更新", 'old-updates.html'
 
 section#profile
   header
