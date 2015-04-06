@@ -73,23 +73,12 @@ ul.media-list
 
 h2 その他 <small>合同誌・寄稿など</small>
 dl.contributions
-  dt 2014年
-  dd
-    span.label.label-illust> イラスト
-    | #{link_to 'カガミツキ', 'https://twitter.com/nyogetsu'}さんの個人誌総集編『#{link_to 'ミラームーンズ 1stMIX', 'http://mmoon.soragoto.net/achade/mm1/'}』の別冊トリビュート本にゲスト参加
-  dd
-    span.label.label-illust> イラスト
-    | #{link_to 'おけらびあすら', 'https://twitter.com/oke_rabbit'}さんのポストカード集『#{link_to '冬のインクがなくなる前に', 'http://pixiv.net/i/47189065'}』にゲスト参加
-
-  dt 2012年
-  dd
-    span.label.label-illust> イラスト
-    | サークル#{link_to '(旧)彳', 'http://memorial.gymb.jp'}の合同誌『#{link_to 'ほたて缶', 'http://memorial.gymb.jp/comic/hotate'}』にゲスト参加
-
-  dt 2011年
-  dd
-    span.label.label-comic> 漫画
-    | サークル#{link_to '(旧)彳', 'http://memorial.gymb.jp/'}の合同誌『#{link_to '屋根から降る雨', 'http://memorial.gymb.jp/comic/yaneame'}』に参加
+  - for year, contribs in data.contribs.sort_by(&:date).reverse.group_by {|c| c.date.year }
+    dt #{year}年
+    - for contrib in contribs
+      dd
+        span> class="label #{contrib['class']}" = contrib.label
+        = contrib.content
 
 javascript:
   $(function () {
