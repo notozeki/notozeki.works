@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'middleman', '~> 3.3.6'
+gem 'middleman', '~> 3.3'
 gem 'sass', '~> 3.4.7' # fix #1476
 gem 'slim'
 
