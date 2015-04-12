@@ -1,0 +1,27 @@
+---
+title: 名古屋コミティア46 アフターレポート
+tags: コミティア, 名古屋コミティア46
+lead_image: IMG_2154.jpg
+---
+
+[以前お伝えした](/blog/upnext-events-spring-2015)通り、きりんさん([@kirinex](https://twitter.com/kirinex))と共に名古屋コミティアに参加してきました！READMORE 2人の激闘の記録はレポート漫画にまとめてpixivにアップしたので、そちらをご覧ください。
+
+<p>
+<blockquote class="twitter-tweet" lang="en"><p>名古屋コミティア46 アフターレポート | notozeki <a href="http://t.co/XEh19fvuSr">http://t.co/XEh19fvuSr</a></p>&mdash; のとぜき (@notozeki) <a href="https://twitter.com/notozeki/status/587147732080394240">April 12, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
+
+レポート漫画の中では今回の新刊についてあまり触れられなかったので、ここでちょろっとそのお話を。
+
+今回の新刊は、きりんさんとぼくの2人で合同誌を作りました。合同誌と言っても、テーマは特に決めないでお互いに自由に描いたので、「2つの個人誌がくっついている本」と言ったほうが正しいかもしれません。実際、本の装丁はリバーシブル仕様になっていて、片方の表紙からはきりんさんの作品、もう片方からはぼくの作品が読めるようになっています。
+
+そしてぼくが今回描いた作品ですが、前々から描きたいと思っていた「**心の哲学**」に片足…いや、0.5足くらいを突っ込んだ話を描きました。まだ5月ティア前なので詳細は伏せたいと思うのですが、なんというか、いろいろ足りませんでした。何がどう足りなかったのかは、ぜひ5月5日のCOMITIA112で【N09a】に来てご確認ください。きりんさんの方の作品はあいかわらず素敵だったのでそれも楽しめますよ。
+
+<figure>
+  <img src="/assets/img/comitia112cc.png" height="200px">
+</figure>
+
+そう！ のとぜきは5月5日のCOMITIA112にも参加します！ スペースは**【N09a】**ですよ！ notozekiのN！ もう覚えたね！ 09aはがんばって覚えるんだ！
+今回の名古屋ティアの新刊 ＋ さらに新刊を出す予定です。最近のぼくの推しキャラであるところの[にのめちゃん](http://www.uchinokomato.me/chara/show/19889)のお話です。乞うご期待。
+
+それでは、COMITIA112でお会いしましょう！
