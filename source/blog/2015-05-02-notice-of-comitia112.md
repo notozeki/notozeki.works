@@ -1,5 +1,6 @@
 ---
 title: COMITIA112に参加します！
+tags: コミティア, COMITIA112
 ---
 
 <figure>
