@@ -77,3 +77,16 @@
     date: 2012-09-02
     event: COMITIA101
   stock: なし
+
+- id: ninome-fans-book
+  title: にのめちゃんファンブック
+  cover: /assets/img/ninome-fans-book.png
+  labels:
+    - name: イラスト
+      class: label-illust
+    - name: A5オンデマンド本
+      class: label-format
+  publish:
+    date: 2015-05-05
+    event: COMITIA112
+  stock: なし
