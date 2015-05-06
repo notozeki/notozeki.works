@@ -1,0 +1,5 @@
+- content_for(:title, "タグ: #{tagname}")
+h2 タグ「#{tagname}」が付いた記事
+ul.media-list.blog-articles
+  - for article in articles
+    = partial 'article', locals: {article: article}

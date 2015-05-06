@@ -28,7 +28,8 @@ helpers do
   # View helpers
   #
   def make_title
-    [current_page.data.title, config[:site_name]].compact.join(' | ')
+    title = current_page.data.title ? current_page.data.title : yield_content(:title)
+    [title, config[:site_name]].compact.join(' | ')
   end
 
   def nav_link(text, path)
@@ -126,6 +127,7 @@ activate :blog do |blog|
   blog.permalink = '{title}.html'
   blog.layout = 'blog'
   blog.summary_length = nil
+  blog.tag_template = 'blog/tag.html'
 end
 activate :autoprefixer
 activate :directory_indexes

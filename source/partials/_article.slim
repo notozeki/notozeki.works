@@ -1,0 +1,20 @@
+li.media
+  div.media-left
+    = link_to article.url do
+      - if article.data.lead_image
+        = thumb_tag article.data.lead_image, config[:blog_thumb_geometry] + '#'
+      - else
+        = image_tag lorem.image(config[:blog_thumb_geometry], text: article.date.strftime('%F'), background_color: '#ffe')
+  div.media-body
+    header
+      h3.media-heading.blog-title
+        = link_to article.url do
+          = article.title
+        small< = time_tag article.date
+      ul.labels
+        - for tag in article.tags
+          => link_to tag_path(tag), class: 'label label-tag' do
+            | #{fa 'tag'} #{tag}
+    p
+      = strip_tags article.summary
+      = link_to "#{fa 'angle-double-right'} 続きを読む", article.url

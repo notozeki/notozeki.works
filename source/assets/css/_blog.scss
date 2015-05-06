@@ -81,6 +81,9 @@ body.blog {
 
 .label-tag {
     background-color: lighten($brand-primary, 20%);
+    &:hover {
+        background-color: darken(lighten($brand-primary, 20%), 15%);
+    }
 }
 
 .pager {
