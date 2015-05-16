@@ -17,9 +17,10 @@
 h2 更新情報
 dl.updates
   - for update in latest_updates
-    dt = time_tag update.date
+    dt
+      => time_tag update.date
+      span class="label #{update['class']}" = update.type
     dd
-      span> class="label #{update['class']}" = update.type
       = link_to update.content, update.link
 - if old_updates.any?
   p = link_to "#{fa 'angle-double-right'} 過去の更新", 'old-updates.html'
@@ -29,20 +30,20 @@ section#profile
     div.profile-icon
       img src="/assets/img/notozeki-icon.png" class="img-circle"
 
-    h1.profile-heading notozeki/のとぜき
+    h1.profile-heading
+      ' notozeki/のとぜき
+      ul.social-links
+        li> = link_to 'https://twitter.com/notozeki', class: 'btn btn-twitter btn-xs', target: '_blank' do
+          | #{fa 'twitter'} Twitter
+        li> = link_to 'http://pixiv.me/notozeki', class: 'btn btn-pixiv btn-xs', target: '_blank' do
+          | #{fa 'paint-brush'} pixiv
+        li> = link_to 'https://github.com/notozeki', class: 'btn btn-github btn-xs', target: '_blank' do
+          | #{fa 'github'} GitHub
 
-    ul.social-links
-      li> = link_to 'https://twitter.com/notozeki', class: 'label label-twitter' do
-        | #{fa 'twitter'} Twitter
-      li> = link_to 'http://pixiv.me/notozeki', class: 'label label-pixiv' do
-        | pixiv
-      li> = link_to 'https://github.com/notozeki', class: 'label label-github' do
-        | #{fa 'github'} GitHub
-
+  p 主に絵を描くひとです。たまにプログラミングもします。
+  p 漫画やイラストを制作し、同人イベントに参加しています。詳しくは「#{link_to '同人活動', '/doujin/'}」をご覧ください。
   p
-    | 主に絵を描くひとです。漫画やイラストを制作し、同人イベントに参加しています。
-      詳しくは「#{link_to '同人活動', '/doujin/'}」をご覧ください。
-
-  p
-    | 連絡などありましたら#{mail_to 'notozeki@gmail.com'}までどうぞ。
+    | 連絡などありましたら #{mail_to 'notozeki@gmail.com'} までどうぞ。
       一方的にコメントを送りたいときは「#{link_to 'コメントフォーム', '/comment.html'}」もご利用いただけます。
+  
+  

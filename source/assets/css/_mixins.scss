@@ -5,6 +5,10 @@
         }
     }
 
+    dd {
+        margin-bottom: (($line-height-computed - $font-size-base) / 2);
+    }
+
     @media (min-width: $screen-sm-min) {
         dt {
             float: left;
@@ -13,11 +17,8 @@
     }
 
     @media (max-width: $screen-xs-max) {
-        dt {
-            margin-top: ($line-height-computed / 4);
-        }
         dd {
-            margin-left: .3em;
+            margin-bottom: $line-height-computed / 2;
         }
     }
 }

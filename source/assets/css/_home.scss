@@ -6,8 +6,21 @@
     @include description-list;
 }
 
+#profile {
+    margin: 40px 0;
+    padding: 40px 25px;
+    border: 1px solid #eee;
+
+    @media (max-width: $screen-xs-max) {
+        padding: 40px 0 0;
+        border: none;
+    }
+}
+
 .profile-heading {
     @include heading-underline;
+
+    margin-top: 0 !important;
 }
 
 .profile-icon {
@@ -20,41 +33,32 @@
     @media (max-width: $screen-xs-max) {
         float: none;
         padding-left: 0;
-        margin-top: ($line-height-computed * 2);
+        margin-bottom: 20px;
         text-align: center;
     }
 }
 
 .social-links {
-    padding-left: 2px;
-    font-size: floor($font-size-base * 1.125);
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 0;
+    vertical-align: 3px;
+
     li {
         display: inline;
     }
-    .label {
-        padding: .3em .7em;
-    }
 }
 
-.label-twitter {
-    background-color: #55acee;
-    &:hover {
-        background-color: darken(#55acee, 15%);
-    }
+.btn-twitter {
+    @include button-variant(#fff, #55acee, darken(#55acee, 5%));
 }
 
-.label-pixiv {
-    background-color: #0096db;
-    &:hover {
-        background-color: darken(#0096db, 15%);
-    }
+.btn-pixiv {
+    @include button-variant(#fff, #0096db, darken(#0096db, 5%));
 }
 
-.label-github {
-    background-color: #333;
-    &:hover {
-        background-color: darken(#333, 15%);
-    }
+.btn-github {
+    @include button-variant(#fff, #333, darken(#333, 5%));
 }
 
 .label-blog {
