@@ -37,10 +37,11 @@ h2#upnext 参加予定のイベント
 
 h2 個人誌
 p すべて一次創作（オリジナル）作品です。基本的に同人イベントにて頒布していますが、一部の作品はオンラインで電子版(PDF)を購入できます。
-ul.media-list
-  .row.books-grid
+p 再販の要望などありましたら「#{link_to 'コメントフォーム', '/comment.html'}」よりお知らせください。
+.books-grid
+  ul.media-list
     - for book in data.books.sort_by{|b| b.publish.date }.reverse
-      .col-lg-6
+      .books-grid-item
         li.media id=book.id
           div.media-left
             - if book.cover
