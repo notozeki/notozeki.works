@@ -1,4 +1,4 @@
-body.blog {
+body.blog article {
     table {
         @extend .table;
         @extend .table-striped;
@@ -53,6 +53,14 @@ body.blog {
             margin-left: auto;
             margin-right: auto;
         }
+    }
+
+    code {
+        font-size: floor($font-size-base * 0.9);
+    }
+
+    img {
+        max-width: 100%;
     }
 }
 
