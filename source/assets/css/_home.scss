@@ -57,6 +57,10 @@
     @include button-variant(#fff, #0096db, darken(#0096db, 5%));
 }
 
+.btn-tumblr {
+    @include button-variant(#fff, #35465c, darken(#35465c, 5%));
+}
+
 .btn-github {
     @include button-variant(#fff, #333, darken(#333, 5%));
 }
