@@ -85,6 +85,26 @@ body.blog article {
             color: $link-hover-color;
         }
     }
+
+    @media (max-width: $screen-xs-max) {
+        $padding-vertical: $line-height-computed;
+        margin-top: -$padding-vertical;
+        margin-bottom: -$padding-vertical;
+
+        .media {
+            padding-top: $padding-vertical;
+            padding-bottom: $padding-vertical;
+            border-bottom: 1px solid #ddd;
+            &:last-child { border-bottom: none; }
+        }
+
+        .media-left {
+            display: block;
+            width: 100%;
+            margin-bottom: ($line-height-computed / 2);
+            text-align: center;
+        }
+    }
 }
 
 .label-tag {
