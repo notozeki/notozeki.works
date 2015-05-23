@@ -1,3 +1,10 @@
+#gallery.clearfix
+p
+  small
+    ' pictures from 
+    = link_to 'http://notozeki.tumblr.com' do
+      | notozeki.tumblr.com #{fa 'angle-double-right'}
+
 - if upnext_events.any?
   h2 イベント参加
   dl.event-list
@@ -47,5 +54,58 @@ section#profile
   p
     | 連絡などありましたら #{mail_to 'notozeki@gmail.com'} までどうぞ。
       一方的にコメントを送りたいときは「#{link_to 'コメントフォーム', '/comment.html'}」もご利用いただけます。
+
+= javascript_include_tag 'tumblr'
+
+javascript:
+  var tumblrBlogHost = 'notozeki.tumblr.com';
+  var tumblrAPIKey = '5Z3xoviP3BI6WwspdX1zDou2PBA1nKELgxMeYjb4dsbW6tYo6A';
   
+  var tumblr = new Tumblr(tumblrBlogHost, tumblrAPIKey);
   
+  tumblr.posts('photo', function (blog) {
+    var posts = blog.posts;
+    var getPhoto = function (post) {
+      return post.photos[0].alt_sizes[3]; // 250px
+    };
+    var initGallery = function () {
+      var gallery = $('#gallery').empty();
+      var i = 0;
+      var maxWidth = gallery.width() - 2;
+      var maxHeight = 200;
+      var gutterWidth = 10; // MUST be same as $gallery-gutter-size of _home.scss
+      var numRows = 2;
+      
+      for (var rows = 0; rows < numRows; rows++) {
+        var rowPosts = [];
+        var rowWidth = 0;
+        var rowHeight = maxHeight;
+        var base = null;
+
+        while (rowHeight >= maxHeight && i < posts.length) {
+          var post = posts[i++];
+          var pic = getPhoto(post);
+          if (base === null) base = pic;
+          rowPosts.push(post);
+          
+          var contentWidth = maxWidth - (rowPosts.length * gutterWidth);
+          rowWidth += base.height * pic.width / pic.height;
+          rowHeight = contentWidth * base.height / rowWidth;
+        }
+        if (rowHeight > maxHeight) rowHeight = maxHeight;
+
+        $.each(rowPosts, function (_, post) {
+          gallery.append(
+            $('<div>', {class: 'gallery-item'}).append(
+              $('<a>', {href: post.post_url}).append(
+                $('<img>', {src: getPhoto(post).url, height: Math.floor(rowHeight)})
+              )
+            )
+          );
+        });
+      }
+    };
+    
+    $(document).ready(initGallery);
+    $(window).resize(initGallery);
+  });

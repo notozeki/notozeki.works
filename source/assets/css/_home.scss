@@ -1,3 +1,21 @@
+#gallery {
+    $gallery-gutter-size: 10px;
+
+    margin-left: -($gallery-gutter-size / 2);
+    margin-right: -($gallery-gutter-size / 2);
+
+    .gallery-item {
+        float: left;
+        margin-left: ($gallery-gutter-size / 2);
+        margin-right: ($gallery-gutter-size / 2);
+        margin-bottom: $gallery-gutter-size;
+
+        img:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
 .event-list {
     @include description-list;
 }
