@@ -16,6 +16,21 @@
     }
 }
 
+#gallery-loading {
+    width: 100%;
+    text-align: center;
+
+    .gallery-loading-icon {
+        display: inline-block;
+        padding: 20px;
+        border-radius: 4px;
+        font-size: 30px;
+        line-height: 1;
+        color: #fff;
+        background: rgba(#000, 0.3);
+    }
+}
+
 .event-list {
     @include description-list;
 }
