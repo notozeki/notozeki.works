@@ -1,6 +1,7 @@
 ---
 title: みちのくCOMITIA1に参加します！
 tags: コミティア, みちのくCOMITIA1
+thumb_image: michinoku_comitia1cc.png
 ---
 
 のとぜき地方遠征第二弾！

@@ -1,7 +1,7 @@
 ---
 title: COMITIA111に参加しました
 tags: コミティア, COMITIA111
-lead_image: IMG_1867.JPG
+header_image: IMG_1867.JPG
 ---
 
 もう一昨日のことになりますが、2月1日に開催されたCOMITIA111にサークル参加しました。

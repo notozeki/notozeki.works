@@ -1,7 +1,7 @@
 ---
 title: 名古屋コミティア46 アフターレポート
 tags: コミティア, 名古屋コミティア46
-lead_image: IMG_2154.jpg
+header_image: IMG_2154.jpg
 ---
 
 [以前お伝えした](/blog/upnext-events-spring-2015)通り、きりんさん([@kirinex](https://twitter.com/kirinex))と共に名古屋コミティアに参加してきました！READMORE 2人の激闘の記録はレポート漫画にまとめてpixivにアップしたので、そちらをご覧ください。

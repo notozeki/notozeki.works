@@ -1,6 +1,6 @@
 ---
 title: TumblrとIllustfolio 2でイケメンかつカジュアルな画像置き場をつくる
-lead_image: notozeki-on-tumblr_lead.png
+header_image: notozeki-on-tumblr_lead.png
 ---
 
 [ブログ記事一覧](/blog/)を見ていたら「こいつコミティアの話しかしてねぇな」ってなったので、たまにはそれ以外の話題についても書いてみようかと思います。

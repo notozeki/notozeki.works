@@ -1,7 +1,7 @@
 ---
 title: にのめちゃんステッカーで学ぶステッカー印刷
 tags: 同人
-lead_image: IMG_2370.png
+header_image: IMG_2370.png
 ---
 
 [先日描いたにのめちゃん](http://notozeki.tumblr.com/post/121486619366)がとってもかわいく描けたので（まさに自画自賛）、唐突にステッカーにしてみました。

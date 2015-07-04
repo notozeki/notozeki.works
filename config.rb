@@ -85,6 +85,14 @@ helpers do
     config[:site_url] + path
   end
 
+  def thumb_image(article)
+    article.data.thumb_image || article.data.header_image
+  end
+
+  def has_thumb_image?(article)
+    article.data.thumb_image? || article.data.header_image?
+  end
+
   #
   # Pseudo-models
   #
