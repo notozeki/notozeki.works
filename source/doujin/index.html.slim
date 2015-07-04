@@ -9,7 +9,7 @@ h2#upnext 参加予定のイベント
 - else
   ul.media-list
     - for event in upnext_events
-      li.media
+      li.media.event-item
         div.media-left
           - if event.circlecut
             = link_to event.circlecut, class: 'circle-cut-thumbnail' do
@@ -26,14 +26,16 @@ h2#upnext 参加予定のイベント
           p
             => time_tag_ja event.date, with_weekday: true
             span.text-nowrap = event.place
-          dl.event-description
-            dt スペース
-            dd
-              span.space-no = event.space
-              = event.circle
+          table.table.event-description
+            tr
+              th スペース
+              td
+                span.space-no = event.space
+                = event.circle
             - for key, value in event.desc
-              dt = key
-              dd = value
+              tr
+                th = key
+                td = value
 
 h2 個人誌
 p すべて一次創作（オリジナル）作品です。基本的に同人イベントにて頒布していますが、一部の作品はオンラインで電子版(PDF)を購入できます。

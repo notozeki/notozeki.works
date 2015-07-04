@@ -8,6 +8,50 @@
     }
 }
 
+// Events
+
+.circle-cut-thumbnail {
+    @include thumbnail(150px, 150px);
+}
+
+.event-description {
+    width: auto;
+
+    > tbody {
+        > tr {
+            > th, > td {
+                padding: 2px 6px;
+            }
+        }
+        > tr:first-child {
+            > th, > td {
+                border: none;
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .event-item {
+        .media-left {
+            display: block;
+            width: 100%;
+            margin-bottom: ($line-height-computed / 2);
+            text-align: center;
+        }
+
+        .media-body {
+            display: block;
+            width: 100%;
+        }
+
+        .event-description {
+            width: 100%;
+        }
+    }
+}
+
+// Books
 
 $books-grid-gutter-size: 15px;
 $books-grid-margin-vertical: $line-height-computed;
@@ -43,15 +87,17 @@ $books-grid-margin-vertical: $line-height-computed;
     }
 }
 
-.circle-cut-thumbnail {
-    @include thumbnail(150px, 150px);
-}
-
 .book-cover-thumbnail {
     @include thumbnail(150px, 200px);
     > img {
         border: 1px solid #eee;
     }
+}
+
+.book-description {
+    @include description-list;
+
+    margin-bottom: $line-height-computed;
 }
 
 @media (max-width: $screen-xs-max) {
@@ -83,16 +129,7 @@ $books-grid-margin-vertical: $line-height-computed;
     }
 }
 
-
-.event-description {
-    @include description-list;
-}
-
-.book-description {
-    @include description-list;
-
-    margin-bottom: $line-height-computed;
-}
+// Contributions
 
 .contributions {
     dt:not(:first-child) {
@@ -110,6 +147,8 @@ $books-grid-margin-vertical: $line-height-computed;
         }
     }
 }
+
+// misc
 
 .label-illust {
     background-color: $brand-info;
