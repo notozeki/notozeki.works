@@ -10,11 +10,14 @@ li.media
       h3.media-heading.blog-title
         = link_to article.url do
           = article.title
-        small< = time_tag article.date
-      ul.labels
-        - for tag in article.tags
-          => link_to tag_path(tag), class: 'label label-tag' do
-            | #{fa 'tag'} #{tag}
+      div.blog-metadata
+        span.blog-pubdate
+          => fa 'clock-o'
+          = time_tag article.date
+        ul.tags
+          - for tag in article.tags
+            = link_to tag_path(tag), class: 'label label-tag' do
+              | #{fa 'tag'} #{tag}
     p
       = strip_tags article.summary
       = link_to "#{fa 'angle-double-right'} 続きを読む", article.url

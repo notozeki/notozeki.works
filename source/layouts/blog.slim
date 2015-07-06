@@ -6,9 +6,9 @@
           p.blog-pubdate = time_tag current_article.date
         .col-md-10
           h2.blog-title = current_article.title
-          ul.labels
+          ul.tags
             - for tag in current_article.tags
-              => link_to tag_path(tag), class: 'label label-tag' do
+              = link_to tag_path(tag), class: 'label label-tag' do
                 | #{fa 'tag'} #{tag}
 
     .row

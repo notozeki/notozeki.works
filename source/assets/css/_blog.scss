@@ -1,4 +1,9 @@
 body.blog article {
+    h2 {
+        margin-top: $line-height-computed * 3;
+        margin-bottom: $line-height-computed;
+    }
+
     table {
         @extend .table;
         @extend .table-striped;
@@ -7,6 +12,22 @@ body.blog article {
 
     p {
         margin-bottom: $line-height-computed;
+    }
+
+    ul {
+        margin-bottom: $line-height-computed;
+    }
+
+    blockquote {
+        font-size: ceil($font-size-base * 1.1);
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    code {
+        font-size: floor($font-size-base * 0.9);
     }
 
     figure {
@@ -26,6 +47,10 @@ body.blog article {
         img {
             max-width: 200px;
         }
+    }
+
+    img {
+        max-width: 100%;
     }
 
     img.blog-top {
@@ -54,23 +79,15 @@ body.blog article {
             margin-right: auto;
         }
     }
-
-    code {
-        font-size: floor($font-size-base * 0.9);
-    }
-
-    img {
-        max-width: 100%;
-    }
 }
 
 .blog-header {
-    margin-bottom: 15px;
     .blog-pubdate {
         margin-bottom: ($line-height-computed / 4);
         font-weight: bold;
         color: gray;
     }
+
     .blog-title {
         margin-top: 0;
         @include heading-underline;
@@ -83,6 +100,20 @@ body.blog article {
         &:hover,
         &:focus {
             color: $link-hover-color;
+        }
+    }
+
+    .blog-metadata {
+        margin-bottom: $line-height-computed;
+        font-size: ceil($font-size-base * 0.8);
+
+        .blog-pubdate {
+            color: $gray-light;
+            margin: 0 .6em;
+        }
+
+        .tags {
+            display: inline;
         }
     }
 
@@ -107,10 +138,21 @@ body.blog article {
     }
 }
 
-.label-tag {
-    background-color: lighten($brand-primary, 20%);
-    &:hover {
-        background-color: darken(lighten($brand-primary, 20%), 15%);
+.tags {
+    margin-bottom: ($line-height-computed / 2);
+    padding: 0;
+
+    .label {
+        font-size: ceil($font-size-base * 0.8);
+    }
+
+    .label-tag {
+        color: lighten($brand-primary, 10%);
+    }
+
+    a.label-tag:hover {
+        color: darken(lighten($brand-primary, 10%), 15%);
+        text-decoration: underline;
     }
 }
 
