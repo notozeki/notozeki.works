@@ -29,6 +29,11 @@
             }
         }
     }
+
+    ul {
+        list-style: disc;
+        margin-bottom: ($line-height-computed / 2);
+    }
 }
 
 @media (max-width: $screen-xs-max) {
