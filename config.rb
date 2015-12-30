@@ -129,6 +129,9 @@ helpers do
   end
 end
 
+# Time Zone
+Time.zone = 'Tokyo'
+
 # Extensions
 activate :blog do |blog|
   blog.prefix = 'blog'
