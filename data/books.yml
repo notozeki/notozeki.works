@@ -9,9 +9,10 @@
   publish:
     date: 2015-02-01
     event: COMITIA111
-  stock: なし
+  stock: なし/電子版あり
   shops:
     - link: https://notozeki.booth.pm/items/74185
+      price: 100
       class: btn-booth
 
 - id: hajime-ninome
@@ -50,7 +51,11 @@
   publish:
     date: 2014-05-05
     event: COMITIA108
-  stock: なし
+  stock: なし/電子版あり
+  shops:
+    - link: https://notozeki.booth.pm/items/74185
+      price: 0
+      class: btn-booth
 
 - id: how-to-make-rhombic-hexecontahedron
   title: <ruby>菱型<rp>(</rp><rt>りょうけい</rt><rp>)</rp></ruby>六十面体のつくりかた
@@ -105,4 +110,5 @@
   stock: あり
   shops:
     - link: https://notozeki.booth.pm/items/134870
+      price: 200
       class: btn-booth

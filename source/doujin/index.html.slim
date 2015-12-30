@@ -68,7 +68,10 @@ p 再販の要望などありましたら「#{link_to 'コメントフォーム'
               dd = book.stock
             - for shop in (book.shops || [])
               => link_to shop.link, class: "btn #{shop['class']} btn-sm", target: '_blank' do
-                | #{gl 'shopping-cart'} 電子版を買う
+                - if shop.price == 0
+                  | #{gl 'download'} 無料ダウンロード
+                - else
+                  | #{gl 'shopping-cart'} ¥#{shop.price} 購入する
             = link_to "#{gl 'pencil'} 感想を送る",
                       '/comment.html',
                       class: 'comment-button btn btn-default btn-sm',
