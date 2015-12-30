@@ -21,3 +21,6 @@ gem 'rack-google-analytics'
 gem 'middleman-blog'
 gem 'redcarpet' # Markdown engine
 gem 'middleman-dragonfly_thumbnailer'
+
+# Development
+gem 'rake'
