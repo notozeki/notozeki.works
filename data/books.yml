@@ -90,3 +90,19 @@
     date: 2015-05-05
     event: COMITIA112
   stock: なし
+
+- id: no-glasses-first
+  title: 視界不良 前編
+  cover: /assets/img/no-glasses-first.png
+  labels:
+    - name: 漫画
+      class: label-comic
+    - name: A5オンデマンド本
+      class: label-format
+  publish:
+    date: 2015-08-30
+    event: COMITIA113
+  stock: あり
+  shops:
+    - link: https://notozeki.booth.pm/items/134870
+      class: btn-booth
