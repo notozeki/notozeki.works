@@ -54,3 +54,19 @@
         <li>グッズ「にのめちゃんステッカー」 予価 ¥300</li>
       </ul>
       <p>→詳細は<a href="/blog/comitia113-announcement">ブログ記事</a>をご覧ください。</p>
+
+- name: COMITIA115
+  url: http://www.comitia.co.jp/
+  date: 2016-01-31
+  place: 東京ビッグサイト 東5・6ホール
+  circlecut: /assets/img/comitia115cc.png
+  space: P21b
+  circle: See Other
+  desc:
+    頒布物: |
+      <ul>
+        <li><span class="label label-danger">新刊</span> 漫画『視界不良 後編』 予価 ¥200</li>
+        <li>漫画『視界不良 前編』 予価 ¥200</li>
+        <li>グッズ「にのめちゃんステッカー」 予価 ¥300</li>
+      </ul>
+      <p>→ 詳細は<a href="/blog/comitia115">ブログ記事</a>をご覧ください。</p>
