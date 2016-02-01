@@ -112,3 +112,20 @@
     - link: https://notozeki.booth.pm/items/134870
       price: 200
       class: btn-booth
+
+- id: no-glasses-last
+  title: 視界不良 後編
+  cover: /assets/img/shikaifuryo-last.png
+  labels:
+    - name: 漫画
+      class: label-comic
+    - name: A5オンデマンド本
+      class: label-format
+  publish:
+    date: 2016-01-31
+    event: COMITIA115
+  stock: あり
+  shops:
+    - link: https://notozeki.booth.pm/items/197482
+      price: 200
+      class: btn-booth
