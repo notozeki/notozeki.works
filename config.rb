@@ -97,7 +97,7 @@ helpers do
   # Pseudo-models
   #
   def upnext_events
-    data.events.select{|event| event.date > Date.today }
+    data.events.select{|event| event.date >= Date.today }
   end
 
   def updates
