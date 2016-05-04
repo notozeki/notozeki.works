@@ -84,3 +84,18 @@
         <li>漫画『<a href="/doujin/#no-glasses-first">視界不良 前編</a>』 予価 ¥200</li>
         <li>漫画『<a href="/doujin/#no-glasses-last">視界不良 後編</a>』 予価 ¥200</li>
       </ul>
+
+- name: COMITIA116
+  url: http://www.comitia.co.jp/
+  date: 2016-05-05
+  place: 東京ビッグサイト 東4・5・6ホール
+  circlecut: /assets/img/comitia116cc.png
+  space: か39b
+  circle: にのめ本舗
+  desc:
+    頒布物: |
+      <ul>
+        <li>漫画『視界不良 後編』 予価 ¥200</li>
+        <li>漫画『視界不良 前編』 予価 ¥200</li>
+        <li>グッズ「にのめちゃんステッカー」 予価 ¥300</li>
+      </ul>
