@@ -143,6 +143,8 @@ header_image: IMG_1643.png
 
 参考になれば幸いです。
 
+<iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=cccccc&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=notozeki-22&o=9&p=8&l=as1&m=amazon&f=ifr&ref=qf_sp_asin_til&asins=B0116O4YGE" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+
 <hr>
 
 「[創作ブログリレー 2015](http://www.adventar.org/calendars/1294)」は明日以降もまだまだ続きます！
