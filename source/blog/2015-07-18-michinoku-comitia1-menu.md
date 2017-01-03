@@ -14,7 +14,6 @@ READMORE
 しおりも先生の新作の情報をドン！
 
 <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">みちのくコミティアの本は男の子くんとロボくんが自由意志についてあれこれする感じになりました <a href="http://t.co/YDu6tEPjAV">pic.twitter.com/YDu6tEPjAV</a></p>&mdash; しおりも@みちのくコミティアI5 (@shiorimoo) <a href="https://twitter.com/shiorimoo/status/620236063949230080">July 12, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 自由意志の話ですってよ奥様……　これを聞いただけでワクワクですね。ぼくもまだ読んでないので当日が楽しみです( ˘ω˘ )
 

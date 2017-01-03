@@ -5,7 +5,6 @@ thumb_image: shikaifuryo-first.png
 ---
 
 <blockquote class="twitter-tweet" lang="en"><p lang="nl" dir="ltr">DAKKOU</p>&mdash; のとぜき/コミティアふ31a (@notozeki) <a href="https://twitter.com/notozeki/status/636131270020300801">August 25, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 しました。新刊あります(｀・ω・´)READMORE
 

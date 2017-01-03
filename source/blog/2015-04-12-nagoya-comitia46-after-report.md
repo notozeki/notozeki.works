@@ -8,7 +8,6 @@ header_image: IMG_2154.jpg
 
 <p>
 <blockquote class="twitter-tweet" lang="en"><p>名古屋コミティア46 アフターレポート | notozeki <a href="http://t.co/XEh19fvuSr">http://t.co/XEh19fvuSr</a></p>&mdash; のとぜき (@notozeki) <a href="https://twitter.com/notozeki/status/587147732080394240">April 12, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </p>
 
 レポート漫画の中では今回の新刊についてあまり触れられなかったので、ここでちょろっとそのお話を。

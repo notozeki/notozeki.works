@@ -28,7 +28,6 @@ header_image: IMG_1643.png
 
 <p>
 <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">色つけてみたけど微妙だなぁ(´ω｀) <a href="http://t.co/oDgZ7HoQLq">pic.twitter.com/oDgZ7HoQLq</a></p>&mdash; のとぜき (@notozeki) <a href="https://twitter.com/notozeki/status/415846834041389057">December 25, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </p>
 
 やはり色はデジタルで塗りたい、しかしペンタブでは「ズレ」が気になる。

@@ -81,7 +81,6 @@ header_image: IMG_2370.png
 1人で10枚持ってても仕方がないので、通販しようと思います。
 
 <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p lang="ja" dir="ltr">にのめちゃんステッカーを作ったので欲しい人がいたら配ります。お代はにのめちゃんのらくがきを1枚描いてください。送料込み。後払い可。 <a href="http://t.co/N0kjl6nUAp">pic.twitter.com/N0kjl6nUAp</a></p>&mdash; のとぜき (@notozeki) <a href="https://twitter.com/notozeki/status/615837444521357312">June 30, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ご興味のある方は[@notozeki](https://twitter.com/notozeki)に@かDMをください。
 

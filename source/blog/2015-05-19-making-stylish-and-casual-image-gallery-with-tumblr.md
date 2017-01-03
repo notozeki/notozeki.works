@@ -18,7 +18,6 @@ header_image: notozeki-on-tumblr_lead.png
 カジュアルに画像を投げられて、なおかつイケメンに一覧してくれればうれしい。そんな都合のいいサービスは……
 
 <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">そこまでするなら自サイトでなくても良いのかな。ある程度自由にレイアウトできればそれで良いはず。Tumblr？</p>&mdash; のとぜき (@notozeki) <a href="https://twitter.com/notozeki/status/600406291844976640">May 18, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 **Tumblr？**
 

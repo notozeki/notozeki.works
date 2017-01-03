@@ -28,7 +28,6 @@ tags: コミティア, 名古屋コミティア46, COMITIA112
 ### おまけ: サークルカットオフの様子
 
 <blockquote class="twitter-tweet" lang="ja"><p>サークルカットオフ…？？</p>&mdash; のとぜき (@notozeki) <a href="https://twitter.com/notozeki/status/567330091223363584">February 16, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 説明しよう！　サークルカットオフとは！　きりんさんとのとぜきの2人で！　都内某所に集まり！　サークルカットのために各々ワンカットずつ描き下ろしたオフ会のことである！！！
 ほんとうにほぼこれだけのために集まりました。
