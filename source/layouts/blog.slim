@@ -13,9 +13,10 @@
 
     .row
       .col-md-offset-2.col-md-10
-        - if current_article.data.header_image
-          p = image_tag current_article.data.header_image, class: 'blog-top'
-        == yield
+        .blog-body
+          - if current_article.data.header_image
+            p = image_tag current_article.data.header_image, class: 'blog-top'
+          == yield
 
         .social-buttons
           .button

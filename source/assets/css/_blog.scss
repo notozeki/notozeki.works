@@ -1,7 +1,9 @@
-body.blog article {
+.blog-body {
     h2 {
-        margin-top: $line-height-computed * 3;
+        margin-top: $line-height-computed * 2;
         margin-bottom: $line-height-computed;
+        padding-left: 0.25em;
+        border-left: 6px solid $brand-primary;
     }
 
     table {
@@ -19,7 +21,9 @@ body.blog article {
     }
 
     blockquote {
-        font-size: ceil($font-size-base * 1.1);
+        //font-size: ceil($font-size-base * 0.8);
+        font-size: $font-size-base;
+        color: #777;
 
         p:last-child {
             margin-bottom: 0;
