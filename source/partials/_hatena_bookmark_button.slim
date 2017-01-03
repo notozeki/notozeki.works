@@ -1,0 +1,13 @@
+= link_to "http://b.hatena.ne.jp/entry/#{url}",
+    class: 'hatena-bookmark-button',
+    title: 'このエントリーをはてなブックマークに追加',
+    data: {\
+      'hatena-bookmark-title'  => title,
+      'hatena-bookmark-layout' => 'standard-balloon',
+      'hatena-bookmark-lang'   => 'ja',
+    } do
+  = image_tag 'https://b.st-hatena.com/images/entry-button/button-only@2x.png',
+      alt: 'このエントリーをはてなブックマークに追加',
+      width: '20',
+      height: '20',
+      style: 'border: none;'

@@ -156,6 +156,21 @@ body.blog article {
     }
 }
 
+.social-buttons {
+    padding: 12px;
+    text-align: center;
+    line-height: 1;
+    background-color: #f8f8f8;
+
+    .button {
+        display: inline-block;
+
+        & + .button {
+          margin-left: 15px;
+        }
+    }
+}
+
 .pager {
     margin: ($line-height-computed / 2 - 6) 0 0;
     font-size: ceil($font-size-base * 0.9);

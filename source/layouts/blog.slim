@@ -17,6 +17,12 @@
           p = image_tag current_article.data.header_image, class: 'blog-top'
         == yield
 
+        .social-buttons
+          .button
+            == partial 'tweet_button'
+          .button
+            == partial 'hatena_bookmark_button', locals: { url: full_url(current_article.url), title: make_title }
+
   .row
     .col-md-offset-2.col-md-10
       nav
