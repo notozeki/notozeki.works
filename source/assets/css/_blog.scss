@@ -10,6 +10,7 @@
         @extend .table;
         @extend .table-striped;
         @extend .table-condensed;
+        @extend .table-bordered;
     }
 
     p {
