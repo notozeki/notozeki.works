@@ -8,10 +8,10 @@ h2 コメントフォーム
     ul
       li いただいたコメントを外部に公開することはありません。
       li いかなる内容であれ、ここからいただいたコメントには返信いたしません。問い合わせなど、返信が必要な連絡には#{mail_to 'notozeki@gmail.com', 'メール'}などの別の手段をご利用ください。
-      li コメントはGoogleのサーバに送られ、保存されます。Googleが信用できない・嫌いな方は使用をお控えください。
+      li このフォームは#{link_to 'formrun', 'https://form.run/'}を利用しています。
 
   .col-lg-7
-    form action="https://script.google.com/macros/s/AKfycbwtMVt6z8gxdDyBXIpBgoHBKzxZJJyAvue5snL1S96vVCuLHu4/exec" method="POST" onsubmit="return validate();"
+    form action="https://form.run/api/v1/r/irqT7ddQ0YwKyffH3GfD" method="POST" onsubmit="return confirm('コメントを送信します。よろしいですか？');"
       .form-group
         label for="comment-name" class="optional" お名前
         input.form-control type="text" name="name" id="comment-name" tabindex="1"
@@ -20,25 +20,18 @@ h2 コメントフォーム
         input.form-control type="text" name="subject" id="comment-subject" tabindex="2"
       .form-group
         label for="comment-body" コメント
-        textarea.form-control name="body" id="comment-body" rows="8" tabindex="3"
+        textarea.form-control name="body" id="comment-body" rows="8" tabindex="3" required=true
       input type="hidden" name="referer" id="comment-referer"
       button.btn.btn-default type="submit" tabindex="4" 送信
 
 javascript:
-  function validate() {
-    if ($.trim($('#comment-body').val()) === '') {
-      alert('コメントを入力してください。');
-      return false;
-    }
-    return confirm('コメントを送信します。よろしいですか？');
-  }
-
   $(function () {
     var subject = sessionStorage.getItem('subject');
     var referer = sessionStorage.getItem('referer');
     if (subject !== null) {
       $('#comment-subject').val(subject);
       sessionStorage.removeItem('subject');
+      $('#comment-body').focus();
     }
     if (referer !== null) {
       $('#comment-referer').val(referer);

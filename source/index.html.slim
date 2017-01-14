@@ -1,7 +1,7 @@
 #gallery.clearfix
 p#gallery-caption
   small
-    ' pictures from 
+    ' pictures from
     = link_to 'http://notozeki.tumblr.com' do
       | notozeki.tumblr.com #{fa 'angle-double-right'}
 
@@ -53,7 +53,7 @@ section#profile
   p 漫画やイラストを制作し、同人イベントに参加しています。詳しくは「#{link_to '同人活動', '/doujin/'}」をご覧ください。
   p
     | 連絡などありましたら #{mail_to 'notozeki@gmail.com'} までどうぞ。
-      一方的にコメントを送りたいときは「#{link_to 'コメントフォーム', '/comment.html'}」もご利用いただけます。
+      一方的にコメントを送りたいときは「#{link_to 'コメントフォーム', '/comment'}」もご利用いただけます。
 
 = javascript_include_tag 'tumblr'
 
@@ -62,7 +62,7 @@ javascript:
   var tumblrAPIKey = '5Z3xoviP3BI6WwspdX1zDou2PBA1nKELgxMeYjb4dsbW6tYo6A';
   var tumblr = new Tumblr(tumblrBlogHost, tumblrAPIKey);
   var tumblrTag = 'カラー';
-  
+
   function initGallery(posts) {
     var gallery = $('#gallery').empty();
     var i = 0;
@@ -70,7 +70,7 @@ javascript:
     var maxHeight = 300;
     var gutterWidth = 10; // MUST be same as $gallery-gutter-size of _home.scss
     var numRows = 2;
-    
+
     for (var rows = 0; rows < numRows; rows++) {
       var rowPosts = [];
       var rowWidth = 0;
@@ -82,7 +82,7 @@ javascript:
         var pic = getPhoto(post);
         if (base === null) base = pic;
         rowPosts.push(post);
-        
+
         var contentWidth = maxWidth - (rowPosts.length * gutterWidth);
         rowWidth += base.height * pic.width / pic.height;
         rowHeight = contentWidth * base.height / rowWidth;
@@ -100,7 +100,7 @@ javascript:
       });
     }
   };
-  
+
   function getPhoto (post) {
     return post.photos[0].alt_sizes[3]; // 250px
   }
@@ -114,16 +114,16 @@ javascript:
     $('#gallery').css({opacity: 0.0, height: 0, overflow: 'hidden'});
     $('#gallery-caption').hide();
   }
-  
+
   function endLoading() {
     $('#gallery-loading').remove();
     $('#gallery').css({height: 'auto'}).fadeTo('slow', 1.0);
     $('#gallery-caption').show();
   }
-  
+
   $(document).ready(beginLoading);
   $(window).load(endLoading);
-  
+
   tumblr.posts('photo', {tag: tumblrTag}, function (blog) {
     $(document).ready(function () { initGallery(blog.posts); });
     $(window).resize(function () { initGallery(blog.posts); });

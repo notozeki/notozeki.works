@@ -39,7 +39,7 @@ h2#upnext 参加予定のイベント
 
 h2 個人誌
 p すべて一次創作（オリジナル）作品です。基本的に同人イベントにて頒布していますが、一部の作品はオンラインで電子版(PDF)を購入できます。
-p 再販の要望などありましたら「#{link_to 'コメントフォーム', '/comment.html'}」よりお知らせください。
+p 再販の要望などありましたら「#{link_to 'コメントフォーム', '/comment'}」よりお知らせください。
 .books-grid
   ul.media-list
     - for book in data.books.sort_by{|b| b.publish.date }.reverse
@@ -73,7 +73,7 @@ p 再販の要望などありましたら「#{link_to 'コメントフォーム'
                 - else
                   | #{gl 'shopping-cart'} ¥#{shop.price} 購入する
             = link_to "#{gl 'pencil'} 感想を送る",
-                      '/comment.html',
+                      '/comment',
                       class: 'comment-button btn btn-default btn-sm',
                       data: {subject: "『#{strip_tags book.title}』感想", referer: normalize_path(current_path)}
 
