@@ -99,3 +99,37 @@
         <li>漫画『視界不良 前編』 予価 ¥200</li>
         <li>グッズ「にのめちゃんステッカー」 予価 ¥300</li>
       </ul>
+
+- name: COMITIA117
+  url: http://www.comitia.co.jp/
+  date: 2016-08-21
+  place: 東京ビッグサイト 東5・6ホール
+  circlecut: /assets/img/comitia117cc.png
+  space: U21b
+  circle: 素材の味
+  desc:
+    頒布物: |
+      <ul>
+        <li>漫画『視界不良 後編』 予価 ¥200</li>
+        <li>漫画『視界不良 前編』 予価 ¥200</li>
+        <li>グッズ「にのめちゃんステッカー(2016)」 予価 ¥200(小)/¥300(大)</li>
+        <li>グッズ「にのめちゃんステッカー(2015)」 予価 ¥300</li>
+        <li>グッズ「にのめちゃんポストカード」 予価 ¥100</li>
+      </ul>
+
+- name: COMITIA119
+  url: http://www.comitia.co.jp/html/119.html
+  date: 2017-02-12
+  place: 東京ビッグサイト 東5・6ホール
+  circlecut: /assets/img/comitia119cc.png
+  space: Z19b
+  circle: 素材の味
+  desc:
+    頒布物: |
+      <ul>
+        <li>漫画『視界不良 後編』 予価 ¥200</li>
+        <li>漫画『視界不良 前編』 予価 ¥200</li>
+        <li>グッズ「にのめちゃんステッカー(2016)」 予価 ¥200(小)/¥300(大)</li>
+        <li>グッズ「にのめちゃんステッカー(2015)」 予価 ¥300</li>
+        <li>グッズ「アクリルにのめちゃん」 予価 ¥800</li>
+      </ul>
