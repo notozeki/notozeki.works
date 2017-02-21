@@ -1,0 +1,36 @@
+---
+title: にのめちゃん線画 20170221
+---
+
+- content_for :twitter_card do
+  meta name="twitter:card" content="summary_large_image"
+  meta name="twitter:site" content="@notozeki"
+  meta name="twitter:title" content=make_title
+  meta name="twitter:description" content="線画をダウンロードできます。ライセンスの範囲内でご自由にお使いください。"
+  meta name="twitter:url" content=full_url(current_page.url)
+  meta name="twitter:image" content=full_url('/assets/img/ninome-line-20170221.png')
+
+h2 にのめちゃん線画 20170221
+p 線画をダウンロードできます。ライセンスの範囲内でご自由にお使いください。
+p
+  | 初出:&nbsp;
+  = link_to 'https://twitter.com/notozeki/status/833294719991951360', 'https://twitter.com/notozeki/status/833294719991951360', target: '_blank'
+
+p.text-center
+  = link_to '/assets/img/ninome-line-20170221.png', style: 'display: inline-block; max-width: 500px; border: 1px solid #ddd;' do
+    = image_tag 'ninome-line-20170221_thumb.png', class: 'img-responsive'
+
+p.text-center
+  = link_to '/assets/img/ninome-line-20170221.png', class: 'btn btn-default', download: 'ninome-line-20170221.png' do
+    = fa 'download'
+    | &nbsp;フル解像度版をダウンロード (約1.6MB)
+
+p.text-center
+  a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+    img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"
+  br
+  small
+    | この作品は
+    a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+      | クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンス
+    | の下に提供されています。
