@@ -16,6 +16,8 @@ html lang="ja"
       meta name="twitter:url" content=full_url(current_article.url)
       - if has_thumb_image?(current_article)
         meta name="twitter:image" content=full_url(thumb_path(thumb_image(current_article)))
+    - if content_for?(:twitter_card)
+      == yield_content(:twitter_card)
 
     = stylesheet_link_tag 'application'
     = stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'
