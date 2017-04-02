@@ -1,0 +1,22 @@
+.item {
+  section {
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    @include heading-underline;
+
+    margin-bottom: 20px;
+  }
+
+  .item-thumbnail {
+    max-width: 100%;
+    border: 1px solid #ddd;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    h3 {
+      margin-top: 0;
+    }
+  }
+}

@@ -132,6 +132,11 @@ end
 # Time Zone
 Time.zone = 'Tokyo'
 
+# Dynamic Pages
+data.items.each do |item|
+  proxy "/items/#{item.id}/index.html", "/items/template.html", locals: { item: item }, ignore: true
+end
+
 # Extensions
 activate :blog do |blog|
   blog.prefix = 'blog'

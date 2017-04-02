@@ -1,0 +1,25 @@
+- id: ninome-line-20170221
+  title: にのめちゃん線画 20170221
+  published_at: 2017-02-21
+  description: |
+    線画をダウンロードできます。ライセンスの範囲内でご自由にお使いください。
+  source: https://twitter.com/notozeki/status/833294719991951360
+  data:
+    - url: ninome-line-20170221.png
+      name: フル解像度版 (4299 x 6071px / 1.6MB)
+  thumbnail: ninome-line-20170221_thumb.png
+  license: CC BY-NC-SA
+
+- id: ninome-wallpaper-20170402
+  title: にのめちゃんスマホ壁紙 2017年春バージョン
+  published_at: 2017-04-02
+  description: |
+    とってもめちゃかわな「にのめちゃん」のスマートフォン向けの壁紙をダウンロードできます。
+
+    個人使用の範囲ならもちろんご自由にお使いください。個人使用の範囲を超える場合はライセンスに従ってください。
+  source: https://twitter.com/notozeki/status/816670294957953026
+  data:
+    - url: ninome-wallpaper-20170402-iphone6.png
+      name: iPhoneに適したサイズ (854 x 1590px / 514KB)
+  thumbnail: ninome-wallpaper-20170402_thumb.png
+  license: CC BY-NC-SA

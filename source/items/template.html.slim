@@ -1,0 +1,46 @@
+- content_for :title, item.title
+- content_for :twitter_card do
+  meta name="twitter:card" content="summary_large_image"
+  meta name="twitter:site" content="@notozeki"
+  meta name="twitter:title" content=make_title
+  meta name="twitter:description" content=item.description.lines.first.chomp
+  meta name="twitter:url" content=full_url(current_page.url)
+  meta name="twitter:image" content=full_url(image_path(item.thumbnail))
+
+article.item
+  section
+    h2 = item.title
+    - item.description.split(/\n\n/).each do |para|
+      p = para
+
+    - if item.source
+      p
+        small.text-muted
+          | 初出:&nbsp;
+          = link_to item.source, item.source, target: '_blank'
+
+  section
+    .row
+      .col-sm-7.text-center
+        = image_tag item.thumbnail, class: 'item-thumbnail'
+
+      .col-sm-5
+        h3
+          = fa 'download'
+          | &nbsp;ダウンロード
+        ul
+          - item.data.each do |data|
+            li = link_to data.name, "/assets/data/#{data.url}"
+
+  footer
+    - case item.license
+    - when 'CC BY-NC-SA'
+      .well.text-center
+        a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+          img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"
+        br
+        small
+          | この作品は
+          a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            | クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンス
+          | の下に提供されています。
