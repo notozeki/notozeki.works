@@ -3,7 +3,7 @@ var Tumblr;
 Tumblr = (function () {
   "use strict";
 
-  var apiHost = 'http://api.tumblr.com/v2';
+  var apiHost = 'https://api.tumblr.com/v2';
 
   var Tumblr = function (blogHostName, apiKey) {
     this.blogHostName = blogHostName;
