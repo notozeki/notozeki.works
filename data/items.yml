@@ -23,3 +23,15 @@
       name: iPhoneに適したサイズ (854 x 1590px / 514KB)
   thumbnail: ninome-wallpaper-20170402_thumb.png
   license: CC BY-NC-SA
+
+- id: ninome-line-20170922
+  title: にのめちゃん線画 20170922
+  published_at: 2017-09-22
+  description: |
+    線画をダウンロードできます。ライセンスの範囲内でご自由にお使いください。
+  source: https://twitter.com/notozeki/status/911201298602532865
+  data:
+    - url: ninome-line-20170922.png
+      name: オリジナル解像度版 (4961 x 7016px / 2.7MB)
+  thumbnail: ninome-line-20170922_thumb.png
+  license: CC BY-NC-SA
