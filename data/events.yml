@@ -133,3 +133,18 @@
         <li>グッズ「にのめちゃんステッカー(2015)」 予価 ¥300</li>
         <li>グッズ「アクリルにのめちゃん」 予価 ¥800</li>
       </ul>
+
+- name: COMITIA129
+  url: http://www.comitia.co.jp/html/129.html
+  date: 2019-08-25
+  place: 東京ビッグサイト青海展示棟A・B
+  circlecut: /assets/img/comitia129cc.png
+  space: ぽ16a
+  circle: 素材の味
+  desc:
+    頒布物: |
+      <ul>
+        <li><span class="label label-danger">新刊</span>『にのめちゃんコスプレブック』 予価 ¥400</li>
+        <li>既作グッズ複数</li>
+      </ul>
+      <p>詳細は<a href="https://twitter.com/notozeki/status/1164899750228848641" target="_blank">おしながき</a>をご覧ください。</p>
