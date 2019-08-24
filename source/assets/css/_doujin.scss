@@ -77,6 +77,10 @@ $books-grid-margin-vertical: $line-height-computed;
         height: 280px;
         padding: 20px 10px;
         border: 1px solid #ddd;
+
+        &:target {
+            background-color: #fffde7;
+        }
     }
 
     .media-heading {
