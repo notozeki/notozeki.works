@@ -9,7 +9,7 @@
   publish:
     date: 2015-02-01
     event: COMITIA111
-  stock: なし/電子版あり
+  stock: 電子版あり
   shops:
     - link: https://notozeki.booth.pm/items/74185
       price: 100
@@ -51,7 +51,7 @@
   publish:
     date: 2014-05-05
     event: COMITIA108
-  stock: なし/電子版あり
+  stock: 電子版あり
   shops:
     - link: https://notozeki.booth.pm/items/168226
       price: 0
@@ -107,7 +107,7 @@
   publish:
     date: 2015-08-30
     event: COMITIA113
-  stock: あり
+  stock: 電子版あり
   shops:
     - link: https://notozeki.booth.pm/items/134870
       price: 200
@@ -124,8 +124,21 @@
   publish:
     date: 2016-01-31
     event: COMITIA115
-  stock: あり
+  stock: 電子版あり
   shops:
     - link: https://notozeki.booth.pm/items/197482
       price: 200
       class: btn-booth
+
+- id: ninome-cosplay-book
+  title: にのめちゃんコスプレブック
+  cover: /assets/img/ninome-cosplay-book.png
+  labels:
+    - name: イラスト
+      class: label-illust
+    - name: A5オンデマンド本
+      class: label-format
+  publish:
+    date: 2019-08-25
+    event: COMITIA129
+  stock: あり
