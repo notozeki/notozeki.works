@@ -1,6 +1,6 @@
 # Config
 set :site_name, 'notozeki works'
-set :site_url, 'http://notozeki.works'
+set :site_url, 'https://notozeki.works'
 
 set :css_dir, 'assets/css'
 set :js_dir, 'assets/js'

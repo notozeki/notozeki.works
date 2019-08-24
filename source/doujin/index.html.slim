@@ -15,7 +15,7 @@ h2#upnext 参加予定のイベント
             = link_to event.circlecut, class: 'circle-cut-thumbnail' do
               = image_tag event.circlecut, alt: "#{event.name} サークルカット"
           - else
-            = image_tag lorem.image('150x150', text: 'no image', background_color: 'eee'),
+            = image_tag 'https://placehold.it/150x150/eee?text=no+image',
                         alt: 'サークルカット画像はありません'
 
         div.media-body
@@ -50,7 +50,7 @@ p 再販の要望などありましたら「#{link_to 'コメントフォーム'
               = link_to book.cover, class: 'book-cover-thumbnail' do
                 = image_tag book.cover, alt: "『#{strip_tags book.title}』表紙"
             - else
-              = image_tag lorem.image('150x200', text: 'no image', background_color: 'eee'),
+              = image_tag 'https://placehold.it/150x200/eee?text=no+image',
                           alt: '表紙画像はありません'
 
           div.media-body

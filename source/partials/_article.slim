@@ -4,7 +4,7 @@ li.media
       - if has_thumb_image?(article)
         = thumb_tag thumb_image(article), config[:blog_thumb_geometry] + '#'
       - else
-        = image_tag lorem.image(config[:blog_thumb_geometry], text: article.date.strftime('%F'))
+        = image_tag "https://placehold.it/#{config[:blog_thumb_geometry]}?text=#{article.date.strftime('%F')}"
   div.media-body
     header
       h3.media-heading.blog-title
