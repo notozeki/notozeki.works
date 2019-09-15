@@ -94,7 +94,11 @@
   publish:
     date: 2015-05-05
     event: COMITIA112
-  stock: なし
+  stock: 電子版あり
+  shops:
+    - link: https://notozeki.booth.pm/items/1530543
+      price: 200
+      class: btn-booth
 
 - id: no-glasses-first
   title: 視界不良 前編
@@ -142,3 +146,12 @@
     date: 2019-08-25
     event: COMITIA129
   stock: あり
+  shops:
+    - link: https://notozeki.booth.pm/items/1539780
+      media: 物理版
+      price: 400
+      class: btn-booth
+    - link: https://notozeki.booth.pm/items/1535557
+      media: 電子版
+      price: 300
+      class: btn-booth

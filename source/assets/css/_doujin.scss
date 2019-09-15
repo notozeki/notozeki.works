@@ -177,7 +177,9 @@ $books-grid-margin-vertical: $line-height-computed;
 
 .btn-booth {
     @include button-variant(#fff, #e6302d, darken(#e6302d, 5%));
+    /*
     &:after {
         content: "\00a0(BOOTH)";
     }
+    */
 }
